@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=/home/m1/peyroux/Documents/M1S1/AEO/AEO/TP3/calc2.ncd
-OUTFILE=/home/m1/peyroux/Documents/M1S1/AEO/AEO/TP3/calc2.bit
+INFILE=/home/m1/peyroux/Documents/M1S1/AEO/TP3/calc2.ncd
+OUTFILE=/home/m1/peyroux/Documents/M1S1/AEO/TP3/calc2.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=/home/m1/peyroux/Documents/M1S1/AEO/AEO/TP3
+WORKINGDIR=/home/m1/peyroux/Documents/M1S1/AEO/TP3
 LICENSE=WebPack
 USER_INFO=0_0_579

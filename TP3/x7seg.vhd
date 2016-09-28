@@ -1,4 +1,4 @@
-----------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------
 -- Company: 
 -- Engineer: 
 -- 
@@ -31,30 +31,62 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity x7seg is
     Port ( sw : in  STD_LOGIC_VECTOR (3 downto 0);
+				mode : in STD_LOGIC_VECTOR ( 1 downto 0);
            sevenseg : out  STD_LOGIC_VECTOR (6 downto 0));
 end x7seg;
 
 architecture Behavioral of x7seg is
 
 begin
-	with sw select
-		sevenseg <=
-			"1000000" when x"0",
-			"1111001" when x"1",
-			"0100100" when x"2",
-			"0110000" when x"3",
-			"0011001" when x"4",
-			"0010010" when x"5",
-			"0000010" when x"6",
-			"1111000" when x"7",
-			"0000000" when x"8",
-			"0010000" when x"9",
-			"0001000" when x"A",
-			"0000011" when x"B",
-			"1000110" when x"C",
-			"0100001" when x"D",
-			"0000110" when x"E",
-			"0001110" when others;
+	process (sw,mode)
+	begin
+	
+		CASE mode is
+			WHEN "00" =>
+				CASE sw IS
+					WHEN  x"0" => sevenseg <= "1000000";
+					WHEN  x"1" => sevenseg <= "1111001";
+					WHEN  x"2" => sevenseg <= "0100100";
+					WHEN  x"3" => sevenseg <= "0110000";
+					WHEN  x"4" => sevenseg <= "0011001";
+					WHEN  x"5" => sevenseg <= "0010010";
+					WHEN  x"6" => sevenseg <= "0000010";
+					WHEN  x"7" => sevenseg <= "1111000";
+					WHEN  x"8" => sevenseg <= "0000000";
+					WHEN  x"9" => sevenseg <= "0010000";
+					WHEN  x"A" => sevenseg <= "0001000";
+					WHEN  x"B" => sevenseg <= "0000011";
+					WHEN  x"C" => sevenseg <= "1000110";
+					WHEN  x"D" => sevenseg <= "0100001";
+					WHEN  x"E" => sevenseg <= "0000110";
+					WHEN OTHERS => sevenseg <= "0001110";
+				END CASE;
+			WHEN "01" =>
+				CASE sw IS
+					WHEN  x"0" => sevenseg <= "0001110";
+					WHEN OTHERS => sevenseg <= "0000111";
+				END CASE;
+			WHEN "10" =>
+				CASE sw IS
+					WHEN  x"0" => sevenseg <= "1000000";
+					WHEN  x"1" => sevenseg <= "1111001";
+					WHEN  x"2" => sevenseg <= "0100100";
+					WHEN  x"3" => sevenseg <= "0110000";
+					WHEN  x"4" => sevenseg <= "0011001";
+					WHEN  x"5" => sevenseg <= "0010010";
+					WHEN  x"6" => sevenseg <= "0000010";
+					WHEN  x"7" => sevenseg <= "1111000";
+					WHEN OTHERS => sevenseg <= "0000000";
+				END CASE;
+			WHEN "11" =>
+				CASE sw IS
+					WHEN  x"0" => sevenseg <= "0001100";
+					WHEN OTHERS => sevenseg <= "1001111";
+				END CASE;
+			WHEN OTHERS => sevenseg <= "1111111";
+			END CASE;
+	end process;
+	
 				
 
 end Behavioral;

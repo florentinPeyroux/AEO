@@ -39,8 +39,10 @@ end calc2;
 
 architecture Behavioral of calc2 is
 
+
 component x7seg is
-    port ( sw : in  STD_LOGIC_VECTOR (3 downto 0);
+    Port ( sw : in  STD_LOGIC_VECTOR (3 downto 0);
+				mode : in STD_LOGIC_VECTOR ( 1 downto 0);
            sevenseg : out  STD_LOGIC_VECTOR (6 downto 0));
 end component;
 
@@ -73,6 +75,7 @@ signal comp1 : STD_LOGIC_VECTOR (3 downto 0);
 signal parity1 : STD_LOGIC_VECTOR (3 downto 0);
 signal count_1 : STD_LOGIC_VECTOR (3 downto 0);
 signal res : STD_LOGIC_VECTOR (3 downto 0);
+signal mode_calc : STD_LOGIC_VECTOR (1 downto 0);
 
 alias a_calc is switches(3 downto 0);
 alias b_calc is switches(7 downto 4);
@@ -92,15 +95,22 @@ begin
 	and1 when btn="00001" else
 	or1 when btn="00010" else
 	xor1 when btn="00011" else
-	comp1 when btn="00100" or btn="00101" or btn="00110" or btn="00111" else
+	comp1 when btn="00100" or btn="00101" or btn="00110" or btn="00111" 	else
 	count_1 when btn="01000" or btn="01001" or btn="01010" or btn="01011" else
-	parity1 when btn="10000" or btn="10001" or btn="10010" or btn="10011" else "0000";
+	parity1 when btn="10000" or btn="10001" or btn="10010" or btn="10011" else "1000";
 	
-	x7seg_1 : x7seg port map (sw => res, sevenseg => sevenseg );
+	mode_calc <= "00" when btn="00000" else
+	"00" when btn="00001" else
+	"00" when btn="00010" else
+	"00" when btn="00011" else
+	"01" when btn="00100" or btn="00101" or btn="00110" or btn="00111" 	else
+	"10" when btn="01000" or btn="01001" or btn="01010" or btn="01011" else
+	"11" when btn="10000" or btn="10001" or btn="10010" or btn="10011" else
+	"00";
+	
+	x7seg_1 : x7seg port map (sw => res, mode => mode_calc, sevenseg => sevenseg );
 	anodes <= "0000";
 	led(6 downto 0) <= "0000000";
-
-
 
 end Behavioral;
 
