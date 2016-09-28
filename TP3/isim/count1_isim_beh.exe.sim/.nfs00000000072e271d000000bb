@@ -1,0 +1,10 @@
+Command line:
+   count1_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50017
+
+Wed Sep 28 15:44:12 2016
+
+
+ Elaboration Time: 0 sec
