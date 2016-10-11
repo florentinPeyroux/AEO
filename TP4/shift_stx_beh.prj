@@ -1,0 +1,2 @@
+vhdl isim_temp "fpd.vhd"
+vhdl isim_temp "shift.vhd"

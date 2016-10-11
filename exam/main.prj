@@ -1,0 +1,4 @@
+vhdl work "x7seg.vhd"
+vhdl work "fsm.vhd"
+vhdl work "clkdiv.vhd"
+vhdl work "main.vhd"

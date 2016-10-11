@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/m1/peyroux/Documents/M1S1/AEO/TP3/calc2.xst" -ofn "/home/m1/peyroux/Documents/M1S1/AEO/TP3/calc2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc calc2.ucf -p xc6slx16-csg324-3 calc2.ngc calc2.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o calc2_map.ncd calc2.ngd calc2.pcf 
+par -w -intstyle ise -ol high -mt off calc2_map.ncd calc2.ncd calc2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml calc2.twx calc2.ncd -o calc2.twr calc2.pcf -ucf calc2.ucf 
+bitgen -intstyle ise -f calc2.ut calc2.ncd 

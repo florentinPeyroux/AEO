@@ -1,0 +1,4 @@
+vhdtdtfi -lib work fpd.vhd -lib work shift.vhd -prj TP41 -o shift.spl -module shift -template /opt/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 shift.spl /home/m1/peyroux/Documents/M1S1/AEO/TP41/shift.sym 
+vhdtdtfi -prj TP41 -o /home/m1/peyroux/Documents/M1S1/AEO/TP41/shift.vhi -lib work /home/m1/peyroux/Documents/M1S1/AEO/TP41//shift.vhd -module shift -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
+vhdtdtfi -prj TP41 -o /home/m1/peyroux/Documents/M1S1/AEO/TP41/shift.vhi -lib work /home/m1/peyroux/Documents/M1S1/AEO/TP41//shift.vhd -module shift -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

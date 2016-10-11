@@ -1,0 +1,620 @@
+Release 12.4 - xst M.81d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: calc2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "calc2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "calc2"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : calc2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/m1/peyroux/Documents/M1S1/AEO/TP3/x7seg.vhd" into library work
+Parsing entity <x7seg>.
+Parsing architecture <Behavioral> of entity <x7seg>.
+Parsing VHDL file "/home/m1/peyroux/Documents/M1S1/AEO/TP3/parity.vhd" into library work
+Parsing entity <parity>.
+Parsing architecture <Behavioral> of entity <parity>.
+Parsing VHDL file "/home/m1/peyroux/Documents/M1S1/AEO/TP3/count1.vhd" into library work
+Parsing entity <count1>.
+Parsing architecture <Behavioral> of entity <count1>.
+Parsing VHDL file "/home/m1/peyroux/Documents/M1S1/AEO/TP3/comp.vhd" into library work
+Parsing entity <comp>.
+Parsing architecture <Behavioral> of entity <comp>.
+Parsing VHDL file "/home/m1/peyroux/Documents/M1S1/AEO/TP3/add4.vhd" into library work
+Parsing entity <add4>.
+Parsing architecture <Behavioral> of entity <add4>.
+Parsing VHDL file "/home/m1/peyroux/Documents/M1S1/AEO/TP3/calc2.vhd" into library work
+Parsing entity <calc2>.
+Parsing architecture <Behavioral> of entity <calc2>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <calc2> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <add4> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <comp> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <count1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <parity> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <x7seg> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "/home/m1/peyroux/Documents/M1S1/AEO/TP3/x7seg.vhd" Line 86. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <calc2>.
+    Related source file is "/home/m1/peyroux/Documents/M1S1/AEO/TP3/calc2.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <_n0077> created at line 77.
+    Summary:
+	inferred   7 Multiplexer(s).
+Unit <calc2> synthesized.
+
+Synthesizing Unit <add4>.
+    Related source file is "/home/m1/peyroux/Documents/M1S1/AEO/TP3/add4.vhd".
+    Found 5-bit adder for signal <sum> created at line 43.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add4> synthesized.
+
+Synthesizing Unit <comp>.
+    Related source file is "/home/m1/peyroux/Documents/M1S1/AEO/TP3/comp.vhd".
+    Summary:
+Unit <comp> synthesized.
+
+Synthesizing Unit <count1>.
+    Related source file is "/home/m1/peyroux/Documents/M1S1/AEO/TP3/count1.vhd".
+    Found 32-bit adder for signal <cnt[31]_GND_8_o_add_0_OUT> created at line 46.
+    Found 32-bit adder for signal <cnt[31]_GND_8_o_add_2_OUT> created at line 46.
+    Found 32-bit adder for signal <cnt[31]_GND_8_o_add_4_OUT> created at line 46.
+    Found 32-bit adder for signal <cnt[31]_GND_8_o_add_6_OUT> created at line 46.
+    Found 32-bit adder for signal <cnt[31]_GND_8_o_add_8_OUT> created at line 46.
+    Found 32-bit adder for signal <cnt[31]_GND_8_o_add_10_OUT> created at line 46.
+    Found 32-bit adder for signal <cnt[31]_GND_8_o_add_12_OUT> created at line 46.
+    Found 32-bit adder for signal <cnt[31]_GND_8_o_add_14_OUT> created at line 46.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred  32 Latch(s).
+	inferred 232 Multiplexer(s).
+Unit <count1> synthesized.
+
+Synthesizing Unit <parity>.
+    Related source file is "/home/m1/peyroux/Documents/M1S1/AEO/TP3/parity.vhd".
+    Summary:
+Unit <parity> synthesized.
+
+Synthesizing Unit <x7seg>.
+    Related source file is "/home/m1/peyroux/Documents/M1S1/AEO/TP3/x7seg.vhd".
+    Found 7-bit 4-to-1 multiplexer for signal <sevenseg> created at line 44.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <x7seg> synthesized.
+RTL-Simplification CPUSTAT: 0.03 
+RTL-BasicInf CPUSTAT: 0.13 
+RTL-BasicOpt CPUSTAT: 0.00 
+RTL-Remain-Bus CPUSTAT: 0.00 
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 32-bit adder                                          : 8
+ 5-bit adder                                           : 1
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Multiplexers                                         : 240
+ 1-bit 2-to-1 multiplexer                              : 224
+ 2-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 8
+ 4-bit 2-to-1 multiplexer                              : 3
+ 4-bit 4-to-1 multiplexer                              : 1
+ 7-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 6
+ 1-bit xor2                                            : 4
+ 1-bit xor9                                            : 1
+ 4-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 32-bit adder                                          : 8
+ 5-bit adder                                           : 1
+# Multiplexers                                         : 271
+ 1-bit 2-to-1 multiplexer                              : 256
+ 2-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 7
+ 4-bit 2-to-1 multiplexer                              : 3
+ 4-bit 4-to-1 multiplexer                              : 1
+ 7-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 6
+ 1-bit xor2                                            : 4
+ 1-bit xor9                                            : 1
+ 4-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <count2/cnt_31> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_4> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_6> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_7> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_5> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_8> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_9> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_10> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_11> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_12> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_13> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_14> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_15> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_16> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_17> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_18> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_19> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_20> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_21> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_23> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_24> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_22> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_25> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_26> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_27> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_28> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_29> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2677 - Node <count2/cnt_30> of sequential type is unconnected in block <calc2>.
+WARNING:Xst:2170 - Unit calc2 : the following signal(s) form a combinatorial loop: parity1<0>.
+
+Optimizing unit <calc2> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block calc2, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : calc2.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 170
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 3
+#      LUT2                        : 2
+#      LUT3                        : 18
+#      LUT4                        : 6
+#      LUT5                        : 49
+#      LUT6                        : 29
+#      MUXCY                       : 24
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 4
+#      LD                          : 4
+# IO Buffers                       : 32
+#      IBUF                        : 13
+#      OBUF                        : 19
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               4  out of  18224     0%  
+ Number of Slice LUTs:                  108  out of   9112     1%  
+    Number used as Logic:               108  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    108
+   Number with an unused Flip Flop:     104  out of    108    96%  
+   Number with an unused LUT:             0  out of    108     0%  
+   Number of fully used LUT-FF pairs:     4  out of    108     3%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of    232    13%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                                       | Clock buffer(FF name)  | Load  |
+-----------------------------------------------------------------------------------+------------------------+-------+
+count2/switches[0]_switches[1]_OR_18_o(count2/switches[0]_switches[1]_OR_18_o<0>:O)| NONE(*)(count2/cnt_0)  | 4     |
+-----------------------------------------------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 10.361ns (Maximum Frequency: 96.512MHz)
+   Minimum input arrival time before clock: 10.656ns
+   Maximum output required time after clock: 16.406ns
+   Maximum combinational path delay: 16.701ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'count2/switches[0]_switches[1]_OR_18_o'
+  Clock period: 10.361ns (frequency: 96.512MHz)
+  Total number of paths / destination ports: 16124 / 4
+-------------------------------------------------------------------------
+Delay:               10.361ns (Levels of Logic = 20)
+  Source:            count2/cnt_0 (LATCH)
+  Destination:       count2/cnt_3 (LATCH)
+  Source Clock:      count2/switches[0]_switches[1]_OR_18_o falling
+  Destination Clock: count2/switches[0]_switches[1]_OR_18_o falling
+
+  Data Path: count2/cnt_0 to count2/cnt_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               5   0.498   0.714  count2/cnt_0 (count2/cnt_0)
+     INV:I->O              1   0.206   0.000  count2/Madd_cnt[31]_GND_8_o_add_0_OUT_lut<0>_INV_0 (count2/Madd_cnt[31]_GND_8_o_add_0_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  count2/Madd_cnt[31]_GND_8_o_add_0_OUT_cy<0> (count2/Madd_cnt[31]_GND_8_o_add_0_OUT_cy<0>)
+     XORCY:CI->O           5   0.180   0.715  count2/Madd_cnt[31]_GND_8_o_add_0_OUT_xor<1> (count2/cnt[31]_GND_8_o_add_0_OUT<1>)
+     LUT3:I2->O            1   0.205   0.000  count2/mux101111 (count2/mux10111)
+     MUXCY:S->O            1   0.172   0.000  count2/Madd_cnt[31]_GND_8_o_add_2_OUT_cy<1> (count2/Madd_cnt[31]_GND_8_o_add_2_OUT_cy<1>)
+     XORCY:CI->O           5   0.180   0.715  count2/Madd_cnt[31]_GND_8_o_add_2_OUT_xor<2> (count2/cnt[31]_GND_8_o_add_2_OUT<2>)
+     LUT5:I4->O            1   0.205   0.000  count2/Mmux_n03022311 (count2/Mmux_n0302231)
+     MUXCY:S->O            0   0.172   0.000  count2/Madd_cnt[31]_GND_8_o_add_4_OUT_cy<2> (count2/Madd_cnt[31]_GND_8_o_add_4_OUT_cy<2>)
+     XORCY:CI->O           4   0.180   0.684  count2/Madd_cnt[31]_GND_8_o_add_4_OUT_xor<3> (count2/cnt[31]_GND_8_o_add_4_OUT<3>)
+     LUT5:I4->O            0   0.205   0.000  count2/Mmux_n03042611 (count2/Mmux_n0304261)
+     XORCY:LI->O           5   0.136   0.715  count2/Madd_cnt[31]_GND_8_o_add_6_OUT_xor<3> (count2/cnt[31]_GND_8_o_add_6_OUT<3>)
+     LUT5:I4->O            0   0.205   0.000  count2/Mmux_n03062611 (count2/Mmux_n0306261)
+     XORCY:LI->O           4   0.136   0.684  count2/Madd_cnt[31]_GND_8_o_add_8_OUT_xor<3> (count2/cnt[31]_GND_8_o_add_8_OUT<3>)
+     LUT5:I4->O            0   0.205   0.000  count2/Mmux_n03082611 (count2/Mmux_n0308261)
+     XORCY:LI->O           4   0.136   0.684  count2/Madd_cnt[31]_GND_8_o_add_10_OUT_xor<3> (count2/cnt[31]_GND_8_o_add_10_OUT<3>)
+     LUT5:I4->O            0   0.205   0.000  count2/Mmux_n03102611 (count2/Mmux_n0310261)
+     XORCY:LI->O           4   0.136   0.684  count2/Madd_cnt[31]_GND_8_o_add_12_OUT_xor<3> (count2/cnt[31]_GND_8_o_add_12_OUT<3>)
+     LUT5:I4->O            0   0.205   0.000  count2/Mmux_n03122611 (count2/Mmux_n0312261)
+     XORCY:LI->O           3   0.136   0.651  count2/Madd_cnt[31]_GND_8_o_add_14_OUT_xor<3> (count2/cnt[31]_GND_8_o_add_14_OUT<3>)
+     LUT5:I4->O            1   0.205   0.000  count2/Mmux_cnt[31]_cnt[31]_MUX_268_o34 (count2/cnt[31]_cnt[31]_MUX_268_o)
+     LD:D                      0.037          count2/cnt_3
+    ----------------------------------------
+    Total                     10.361ns (4.117ns logic, 6.244ns route)
+                                       (39.7% logic, 60.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'count2/switches[0]_switches[1]_OR_18_o'
+  Total number of paths / destination ports: 10503 / 4
+-------------------------------------------------------------------------
+Offset:              10.656ns (Levels of Logic = 19)
+  Source:            switches<7> (PAD)
+  Destination:       count2/cnt_3 (LATCH)
+  Destination Clock: count2/switches[0]_switches[1]_OR_18_o falling
+
+  Data Path: switches<7> to count2/cnt_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   1.222   1.342  switches_7_IBUF (switches_7_IBUF)
+     LUT3:I0->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_2_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_2_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  count2/Madd_cnt[31]_GND_8_o_add_2_OUT_cy<0> (count2/Madd_cnt[31]_GND_8_o_add_2_OUT_cy<0>)
+     XORCY:CI->O           5   0.180   0.715  count2/Madd_cnt[31]_GND_8_o_add_2_OUT_xor<1> (count2/cnt[31]_GND_8_o_add_2_OUT<1>)
+     LUT5:I4->O            1   0.205   0.000  count2/Mmux_n03021211 (count2/Mmux_n0302121)
+     MUXCY:S->O            1   0.172   0.000  count2/Madd_cnt[31]_GND_8_o_add_4_OUT_cy<1> (count2/Madd_cnt[31]_GND_8_o_add_4_OUT_cy<1>)
+     XORCY:CI->O           4   0.180   0.684  count2/Madd_cnt[31]_GND_8_o_add_4_OUT_xor<2> (count2/cnt[31]_GND_8_o_add_4_OUT<2>)
+     LUT5:I4->O            1   0.205   0.000  count2/Mmux_n03042311 (count2/Mmux_n0304231)
+     MUXCY:S->O            0   0.172   0.000  count2/Madd_cnt[31]_GND_8_o_add_6_OUT_cy<2> (count2/Madd_cnt[31]_GND_8_o_add_6_OUT_cy<2>)
+     XORCY:CI->O           5   0.180   0.715  count2/Madd_cnt[31]_GND_8_o_add_6_OUT_xor<3> (count2/cnt[31]_GND_8_o_add_6_OUT<3>)
+     LUT5:I4->O            0   0.205   0.000  count2/Mmux_n03062611 (count2/Mmux_n0306261)
+     XORCY:LI->O           4   0.136   0.684  count2/Madd_cnt[31]_GND_8_o_add_8_OUT_xor<3> (count2/cnt[31]_GND_8_o_add_8_OUT<3>)
+     LUT5:I4->O            0   0.205   0.000  count2/Mmux_n03082611 (count2/Mmux_n0308261)
+     XORCY:LI->O           4   0.136   0.684  count2/Madd_cnt[31]_GND_8_o_add_10_OUT_xor<3> (count2/cnt[31]_GND_8_o_add_10_OUT<3>)
+     LUT5:I4->O            0   0.205   0.000  count2/Mmux_n03102611 (count2/Mmux_n0310261)
+     XORCY:LI->O           4   0.136   0.684  count2/Madd_cnt[31]_GND_8_o_add_12_OUT_xor<3> (count2/cnt[31]_GND_8_o_add_12_OUT<3>)
+     LUT5:I4->O            0   0.205   0.000  count2/Mmux_n03122611 (count2/Mmux_n0312261)
+     XORCY:LI->O           3   0.136   0.651  count2/Madd_cnt[31]_GND_8_o_add_14_OUT_xor<3> (count2/cnt[31]_GND_8_o_add_14_OUT<3>)
+     LUT5:I4->O            1   0.205   0.000  count2/Mmux_cnt[31]_cnt[31]_MUX_268_o34 (count2/cnt[31]_cnt[31]_MUX_268_o)
+     LD:D                      0.037          count2/cnt_3
+    ----------------------------------------
+    Total                     10.656ns (4.499ns logic, 6.157ns route)
+                                       (42.2% logic, 57.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'count2/switches[0]_switches[1]_OR_18_o'
+  Total number of paths / destination ports: 251296 / 7
+-------------------------------------------------------------------------
+Offset:              16.406ns (Levels of Logic = 22)
+  Source:            count2/cnt_0 (LATCH)
+  Destination:       sevenseg<1> (PAD)
+  Source Clock:      count2/switches[0]_switches[1]_OR_18_o falling
+
+  Data Path: count2/cnt_0 to sevenseg<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               5   0.498   0.714  count2/cnt_0 (count2/cnt_0)
+     INV:I->O              1   0.206   0.000  count2/Madd_cnt[31]_GND_8_o_add_0_OUT_lut<0>_INV_0 (count2/Madd_cnt[31]_GND_8_o_add_0_OUT_lut<0>)
+     XORCY:LI->O           5   0.136   0.715  count2/Madd_cnt[31]_GND_8_o_add_0_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_0_OUT<0>)
+     LUT3:I2->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_2_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_2_OUT_lut<0>)
+     XORCY:LI->O           5   0.136   0.715  count2/Madd_cnt[31]_GND_8_o_add_2_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_2_OUT<0>)
+     LUT5:I4->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_4_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_4_OUT_lut<0>)
+     XORCY:LI->O           4   0.136   0.684  count2/Madd_cnt[31]_GND_8_o_add_4_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_4_OUT<0>)
+     LUT5:I4->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_6_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_6_OUT_lut<0>)
+     XORCY:LI->O           5   0.136   0.715  count2/Madd_cnt[31]_GND_8_o_add_6_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_6_OUT<0>)
+     LUT5:I4->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_8_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_8_OUT_lut<0>)
+     XORCY:LI->O           4   0.136   0.684  count2/Madd_cnt[31]_GND_8_o_add_8_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_8_OUT<0>)
+     LUT5:I4->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_10_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_10_OUT_lut<0>)
+     XORCY:LI->O           4   0.136   0.684  count2/Madd_cnt[31]_GND_8_o_add_10_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_10_OUT<0>)
+     LUT5:I4->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_12_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_12_OUT_lut<0>)
+     XORCY:LI->O           3   0.136   0.651  count2/Madd_cnt[31]_GND_8_o_add_12_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_12_OUT<0>)
+     LUT5:I4->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_14_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_14_OUT_lut<0>)
+     XORCY:LI->O           2   0.136   0.864  count2/Madd_cnt[31]_GND_8_o_add_14_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_14_OUT<0>)
+     LUT6:I2->O            1   0.203   0.684  res<0>5 (res<0>5)
+     LUT3:I1->O           11   0.203   1.247  res<0>6 (res<0>)
+     LUT6:I0->O            2   0.203   0.721  x7seg_1/Mmux_sevenseg23 (x7seg_1/Mmux_sevenseg22)
+     LUT6:I4->O            1   0.203   0.000  x7seg_1/Mmux_sevenseg24_G (N156)
+     MUXF7:I1->O           1   0.140   0.579  x7seg_1/Mmux_sevenseg24 (sevenseg_1_OBUF)
+     OBUF:I->O                 2.571          sevenseg_1_OBUF (sevenseg<1>)
+    ----------------------------------------
+    Total                     16.406ns (6.750ns logic, 9.656ns route)
+                                       (41.1% logic, 58.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 162186 / 8
+-------------------------------------------------------------------------
+Delay:               16.701ns (Levels of Logic = 21)
+  Source:            switches<7> (PAD)
+  Destination:       sevenseg<1> (PAD)
+
+  Data Path: switches<7> to sevenseg<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   1.222   1.342  switches_7_IBUF (switches_7_IBUF)
+     LUT3:I0->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_2_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_2_OUT_lut<0>)
+     XORCY:LI->O           5   0.136   0.715  count2/Madd_cnt[31]_GND_8_o_add_2_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_2_OUT<0>)
+     LUT5:I4->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_4_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_4_OUT_lut<0>)
+     XORCY:LI->O           4   0.136   0.684  count2/Madd_cnt[31]_GND_8_o_add_4_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_4_OUT<0>)
+     LUT5:I4->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_6_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_6_OUT_lut<0>)
+     XORCY:LI->O           5   0.136   0.715  count2/Madd_cnt[31]_GND_8_o_add_6_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_6_OUT<0>)
+     LUT5:I4->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_8_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_8_OUT_lut<0>)
+     XORCY:LI->O           4   0.136   0.684  count2/Madd_cnt[31]_GND_8_o_add_8_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_8_OUT<0>)
+     LUT5:I4->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_10_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_10_OUT_lut<0>)
+     XORCY:LI->O           4   0.136   0.684  count2/Madd_cnt[31]_GND_8_o_add_10_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_10_OUT<0>)
+     LUT5:I4->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_12_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_12_OUT_lut<0>)
+     XORCY:LI->O           3   0.136   0.651  count2/Madd_cnt[31]_GND_8_o_add_12_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_12_OUT<0>)
+     LUT5:I4->O            1   0.205   0.000  count2/Madd_cnt[31]_GND_8_o_add_14_OUT_lut<0> (count2/Madd_cnt[31]_GND_8_o_add_14_OUT_lut<0>)
+     XORCY:LI->O           2   0.136   0.864  count2/Madd_cnt[31]_GND_8_o_add_14_OUT_xor<0> (count2/cnt[31]_GND_8_o_add_14_OUT<0>)
+     LUT6:I2->O            1   0.203   0.684  res<0>5 (res<0>5)
+     LUT3:I1->O           11   0.203   1.247  res<0>6 (res<0>)
+     LUT6:I0->O            2   0.203   0.721  x7seg_1/Mmux_sevenseg23 (x7seg_1/Mmux_sevenseg22)
+     LUT6:I4->O            1   0.203   0.000  x7seg_1/Mmux_sevenseg24_G (N156)
+     MUXF7:I1->O           1   0.140   0.579  x7seg_1/Mmux_sevenseg24 (sevenseg_1_OBUF)
+     OBUF:I->O                 2.571          sevenseg_1_OBUF (sevenseg<1>)
+    ----------------------------------------
+    Total                     16.701ns (7.132ns logic, 9.569ns route)
+                                       (42.7% logic, 57.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock count2/switches[0]_switches[1]_OR_18_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+count2/switches[0]_switches[1]_OR_18_o|         |         |   10.361|         |
+--------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 2.99 secs
+ 
+--> 
+
+
+Total memory usage is 366656 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   61 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,7 @@
+[Inputs]
+clk
+=data[15:0]=
+[Outputs]
+=anodes[3:0]=
+=SW[3:0]=
+[BiDir]

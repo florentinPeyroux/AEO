@@ -1,0 +1,381 @@
+--------------------------------------------------------------------------------
+Release 12.4 Trace  (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml calc2.twx calc2.ncd -o calc2.twr calc2.pcf -ucf calc2.ucf
+
+Design file:              calc2.ncd
+Physical constraint file: calc2.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.15 2010-12-02)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock switches<0> to Pad
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                      | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                     | Phase  |
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+sevenseg<0> |        23.866(F)|      SLOW  |         9.417(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<1> |        23.488(F)|      SLOW  |         9.215(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<2> |        23.518(F)|      SLOW  |         9.370(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<3> |        23.542(F)|      SLOW  |         9.227(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<4> |        23.365(F)|      SLOW  |         9.650(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<5> |        23.522(F)|      SLOW  |         9.361(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<6> |        23.917(F)|      SLOW  |         9.419(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+
+Clock switches<1> to Pad
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                      | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                     | Phase  |
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+sevenseg<0> |        23.422(F)|      SLOW  |         8.899(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<1> |        23.044(F)|      SLOW  |         8.697(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<2> |        23.074(F)|      SLOW  |         8.852(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<3> |        23.098(F)|      SLOW  |         8.709(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<4> |        22.921(F)|      SLOW  |         9.132(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<5> |        23.078(F)|      SLOW  |         8.843(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<6> |        23.473(F)|      SLOW  |         8.901(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+
+Clock switches<2> to Pad
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                      | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                     | Phase  |
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+sevenseg<0> |        23.568(F)|      SLOW  |         9.041(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<1> |        23.190(F)|      SLOW  |         8.839(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<2> |        23.220(F)|      SLOW  |         8.994(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<3> |        23.244(F)|      SLOW  |         8.851(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<4> |        23.067(F)|      SLOW  |         9.274(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<5> |        23.224(F)|      SLOW  |         8.985(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<6> |        23.619(F)|      SLOW  |         9.043(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+
+Clock switches<3> to Pad
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                      | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                     | Phase  |
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+sevenseg<0> |        23.072(F)|      SLOW  |         8.854(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<1> |        22.694(F)|      SLOW  |         8.652(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<2> |        22.724(F)|      SLOW  |         8.807(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<3> |        22.748(F)|      SLOW  |         8.664(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<4> |        22.571(F)|      SLOW  |         9.087(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<5> |        22.728(F)|      SLOW  |         8.798(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<6> |        23.123(F)|      SLOW  |         8.856(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+
+Clock switches<4> to Pad
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                      | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                     | Phase  |
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+sevenseg<0> |        22.769(F)|      SLOW  |         8.577(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<1> |        22.391(F)|      SLOW  |         8.375(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<2> |        22.421(F)|      SLOW  |         8.530(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<3> |        22.445(F)|      SLOW  |         8.387(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<4> |        22.268(F)|      SLOW  |         8.810(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<5> |        22.425(F)|      SLOW  |         8.521(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<6> |        22.820(F)|      SLOW  |         8.579(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+
+Clock switches<5> to Pad
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                      | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                     | Phase  |
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+sevenseg<0> |        23.287(F)|      SLOW  |         9.002(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<1> |        22.909(F)|      SLOW  |         8.800(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<2> |        22.939(F)|      SLOW  |         8.955(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<3> |        22.963(F)|      SLOW  |         8.812(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<4> |        22.786(F)|      SLOW  |         9.235(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<5> |        22.943(F)|      SLOW  |         8.946(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<6> |        23.338(F)|      SLOW  |         9.004(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+
+Clock switches<6> to Pad
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                      | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                     | Phase  |
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+sevenseg<0> |        22.383(F)|      SLOW  |         8.283(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<1> |        22.005(F)|      SLOW  |         8.081(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<2> |        22.035(F)|      SLOW  |         8.236(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<3> |        22.059(F)|      SLOW  |         8.093(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<4> |        21.882(F)|      SLOW  |         8.516(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<5> |        22.039(F)|      SLOW  |         8.227(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<6> |        22.434(F)|      SLOW  |         8.285(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+
+Clock switches<7> to Pad
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                      | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                     | Phase  |
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+sevenseg<0> |        23.131(F)|      SLOW  |         8.766(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<1> |        22.753(F)|      SLOW  |         8.564(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<2> |        22.783(F)|      SLOW  |         8.719(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<3> |        22.807(F)|      SLOW  |         8.576(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<4> |        22.630(F)|      SLOW  |         8.999(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<5> |        22.787(F)|      SLOW  |         8.710(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+sevenseg<6> |        23.182(F)|      SLOW  |         8.768(F)|      FAST  |count2/switches[0]_switches[1]_OR_18_o|   0.000|
+------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+
+Clock to Setup on destination clock switches<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+switches<0>    |         |         |   -0.298|   10.077|
+switches<1>    |         |         |    0.335|   10.077|
+switches<2>    |         |         |    1.595|   10.077|
+switches<3>    |         |         |    2.160|   10.077|
+switches<4>    |         |         |    3.394|   10.077|
+switches<5>    |         |         |    4.456|   10.077|
+switches<6>    |         |         |    5.071|   10.077|
+switches<7>    |         |         |    6.267|   10.077|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switches<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+switches<0>    |         |         |    0.220|   10.077|
+switches<1>    |         |         |    0.790|   10.077|
+switches<2>    |         |         |    2.050|   10.077|
+switches<3>    |         |         |    2.615|   10.077|
+switches<4>    |         |         |    3.849|   10.077|
+switches<5>    |         |         |    4.911|   10.077|
+switches<6>    |         |         |    5.526|   10.077|
+switches<7>    |         |         |    6.722|   10.077|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switches<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+switches<0>    |         |         |    0.078|   10.077|
+switches<1>    |         |         |    0.649|   10.077|
+switches<2>    |         |         |    1.909|   10.077|
+switches<3>    |         |         |    2.474|   10.077|
+switches<4>    |         |         |    3.708|   10.077|
+switches<5>    |         |         |    4.770|   10.077|
+switches<6>    |         |         |    5.385|   10.077|
+switches<7>    |         |         |    6.581|   10.077|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switches<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+switches<0>    |         |         |    0.286|   10.077|
+switches<1>    |         |         |    1.094|   10.077|
+switches<2>    |         |         |    2.354|   10.077|
+switches<3>    |         |         |    2.919|   10.077|
+switches<4>    |         |         |    4.153|   10.077|
+switches<5>    |         |         |    5.215|   10.077|
+switches<6>    |         |         |    5.830|   10.077|
+switches<7>    |         |         |    7.026|   10.077|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switches<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+switches<0>    |         |         |    0.591|   10.077|
+switches<1>    |         |         |    1.399|   10.077|
+switches<2>    |         |         |    2.659|   10.077|
+switches<3>    |         |         |    3.224|   10.077|
+switches<4>    |         |         |    4.458|   10.077|
+switches<5>    |         |         |    5.520|   10.077|
+switches<6>    |         |         |    6.135|   10.077|
+switches<7>    |         |         |    7.331|   10.077|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switches<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+switches<0>    |         |         |    0.117|   10.077|
+switches<1>    |         |         |    0.893|   10.077|
+switches<2>    |         |         |    2.153|   10.077|
+switches<3>    |         |         |    2.718|   10.077|
+switches<4>    |         |         |    3.952|   10.077|
+switches<5>    |         |         |    5.014|   10.077|
+switches<6>    |         |         |    5.629|   10.077|
+switches<7>    |         |         |    6.825|   10.077|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switches<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+switches<0>    |         |         |    0.961|   10.077|
+switches<1>    |         |         |    1.769|   10.077|
+switches<2>    |         |         |    3.029|   10.077|
+switches<3>    |         |         |    3.594|   10.077|
+switches<4>    |         |         |    4.828|   10.077|
+switches<5>    |         |         |    5.890|   10.077|
+switches<6>    |         |         |    6.505|   10.077|
+switches<7>    |         |         |    7.701|   10.077|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock switches<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+switches<0>    |         |         |    0.353|   10.077|
+switches<1>    |         |         |    1.059|   10.077|
+switches<2>    |         |         |    2.319|   10.077|
+switches<3>    |         |         |    2.884|   10.077|
+switches<4>    |         |         |    4.118|   10.077|
+switches<5>    |         |         |    5.180|   10.077|
+switches<6>    |         |         |    5.795|   10.077|
+switches<7>    |         |         |    6.991|   10.077|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+btn<0>         |sevenseg<0>    |   14.162|
+btn<0>         |sevenseg<1>    |   14.946|
+btn<0>         |sevenseg<2>    |   14.346|
+btn<0>         |sevenseg<3>    |   13.876|
+btn<0>         |sevenseg<4>    |   13.998|
+btn<0>         |sevenseg<5>    |   14.009|
+btn<0>         |sevenseg<6>    |   14.497|
+btn<1>         |sevenseg<0>    |   13.439|
+btn<1>         |sevenseg<1>    |   14.223|
+btn<1>         |sevenseg<2>    |   13.623|
+btn<1>         |sevenseg<3>    |   13.153|
+btn<1>         |sevenseg<4>    |   13.275|
+btn<1>         |sevenseg<5>    |   13.286|
+btn<1>         |sevenseg<6>    |   13.774|
+btn<2>         |sevenseg<0>    |   14.141|
+btn<2>         |sevenseg<1>    |   14.925|
+btn<2>         |sevenseg<2>    |   14.325|
+btn<2>         |sevenseg<3>    |   13.855|
+btn<2>         |sevenseg<4>    |   13.977|
+btn<2>         |sevenseg<5>    |   13.988|
+btn<2>         |sevenseg<6>    |   14.476|
+btn<3>         |sevenseg<0>    |   12.829|
+btn<3>         |sevenseg<1>    |   13.613|
+btn<3>         |sevenseg<2>    |   13.013|
+btn<3>         |sevenseg<3>    |   12.543|
+btn<3>         |sevenseg<4>    |   12.665|
+btn<3>         |sevenseg<5>    |   12.676|
+btn<3>         |sevenseg<6>    |   13.164|
+btn<4>         |sevenseg<0>    |   12.818|
+btn<4>         |sevenseg<1>    |   13.504|
+btn<4>         |sevenseg<2>    |   12.904|
+btn<4>         |sevenseg<3>    |   12.555|
+btn<4>         |sevenseg<4>    |   12.724|
+btn<4>         |sevenseg<5>    |   12.742|
+btn<4>         |sevenseg<6>    |   13.285|
+switches<0>    |led<7>         |   12.416|
+switches<0>    |sevenseg<0>    |   15.267|
+switches<0>    |sevenseg<1>    |   16.051|
+switches<0>    |sevenseg<2>    |   15.451|
+switches<0>    |sevenseg<3>    |   14.981|
+switches<0>    |sevenseg<4>    |   15.103|
+switches<0>    |sevenseg<5>    |   15.114|
+switches<0>    |sevenseg<6>    |   15.602|
+switches<1>    |led<7>         |   11.394|
+switches<1>    |sevenseg<0>    |   13.852|
+switches<1>    |sevenseg<1>    |   13.922|
+switches<1>    |sevenseg<2>    |   13.504|
+switches<1>    |sevenseg<3>    |   13.528|
+switches<1>    |sevenseg<4>    |   13.351|
+switches<1>    |sevenseg<5>    |   13.508|
+switches<1>    |sevenseg<6>    |   13.903|
+switches<2>    |led<7>         |   11.248|
+switches<2>    |sevenseg<0>    |   15.118|
+switches<2>    |sevenseg<1>    |   15.207|
+switches<2>    |sevenseg<2>    |   14.770|
+switches<2>    |sevenseg<3>    |   14.794|
+switches<2>    |sevenseg<4>    |   14.617|
+switches<2>    |sevenseg<5>    |   14.774|
+switches<2>    |sevenseg<6>    |   15.169|
+switches<3>    |led<7>         |   10.759|
+switches<3>    |sevenseg<0>    |   15.683|
+switches<3>    |sevenseg<1>    |   15.676|
+switches<3>    |sevenseg<2>    |   15.335|
+switches<3>    |sevenseg<3>    |   15.359|
+switches<3>    |sevenseg<4>    |   15.182|
+switches<3>    |sevenseg<5>    |   15.339|
+switches<3>    |sevenseg<6>    |   15.734|
+switches<4>    |led<7>         |   11.898|
+switches<4>    |sevenseg<0>    |   16.917|
+switches<4>    |sevenseg<1>    |   16.675|
+switches<4>    |sevenseg<2>    |   16.569|
+switches<4>    |sevenseg<3>    |   16.593|
+switches<4>    |sevenseg<4>    |   16.416|
+switches<4>    |sevenseg<5>    |   16.573|
+switches<4>    |sevenseg<6>    |   16.968|
+switches<5>    |led<7>         |   11.035|
+switches<5>    |sevenseg<0>    |   17.979|
+switches<5>    |sevenseg<1>    |   17.675|
+switches<5>    |sevenseg<2>    |   17.631|
+switches<5>    |sevenseg<3>    |   17.655|
+switches<5>    |sevenseg<4>    |   17.478|
+switches<5>    |sevenseg<5>    |   17.635|
+switches<5>    |sevenseg<6>    |   18.030|
+switches<6>    |led<7>         |   11.313|
+switches<6>    |sevenseg<0>    |   18.594|
+switches<6>    |sevenseg<1>    |   18.270|
+switches<6>    |sevenseg<2>    |   18.246|
+switches<6>    |sevenseg<3>    |   18.270|
+switches<6>    |sevenseg<4>    |   18.093|
+switches<6>    |sevenseg<5>    |   18.250|
+switches<6>    |sevenseg<6>    |   18.645|
+switches<7>    |led<7>         |   11.293|
+switches<7>    |sevenseg<0>    |   19.790|
+switches<7>    |sevenseg<1>    |   19.412|
+switches<7>    |sevenseg<2>    |   19.442|
+switches<7>    |sevenseg<3>    |   19.466|
+switches<7>    |sevenseg<4>    |   19.289|
+switches<7>    |sevenseg<5>    |   19.446|
+switches<7>    |sevenseg<6>    |   19.841|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Oct  4 15:22:21 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 288 MB
+
+
+

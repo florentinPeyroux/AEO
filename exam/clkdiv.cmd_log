@@ -1,0 +1,4 @@
+vhdtdtfi -lib work clkdiv.vhd -prj exam -o clkdiv.spl -module clkdiv -template /opt/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 clkdiv.spl /home/m1/peyroux/Documents/M1S1/AEO/exam/clkdiv.sym 
+vhdtdtfi -prj exam -o /home/m1/peyroux/Documents/M1S1/AEO/exam/clkdiv.tfi -lib work /home/m1/peyroux/Documents/M1S1/AEO/exam//clkdiv.vhd -module clkdiv -template /opt/Xilinx/12.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -prj exam -o /home/m1/peyroux/Documents/M1S1/AEO/exam/clkdiv.tfi -lib work /home/m1/peyroux/Documents/M1S1/AEO/exam//clkdiv.vhd -module clkdiv -template /opt/Xilinx/12.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 
