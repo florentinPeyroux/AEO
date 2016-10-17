@@ -1,5 +1,0 @@
-[Inputs]
-=sw[3:0]=
-[Outputs]
-=sevenseg[6:0]=
-[BiDir]

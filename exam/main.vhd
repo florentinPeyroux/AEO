@@ -46,6 +46,7 @@ end component;
 component fsm is
 	Port (
 		clk : in std_logic;
+		reset : in std_logic;
 		anodes : out std_logic_vector (3 downto 0);
 		SW : out std_logic_vector(3 downto 0);
 		data : in std_logic_vector (15 downto 0)
@@ -65,7 +66,7 @@ signal result : std_logic_vector (3 downto 0);
 begin
 data <= switches(7 downto 0) & switches(3 downto 0) & switches(7 downto 4);
 clkdiv1 : clkdiv port map(clk => clk, reset => '0', E190 => E);
-fsm1 : fsm port map(clk => E, data => data, SW => result, anodes => anodes);
+fsm1 : fsm port map(clk => E, reset =>'0', data => data, SW => result, anodes => anodes);
 x7seg1 : x7seg port map (sw => result, sevenseg => sevenseg);
 end Behavioral;
 
