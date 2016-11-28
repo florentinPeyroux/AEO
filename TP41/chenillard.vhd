@@ -30,8 +30,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity chenillard is
-    Port ( clk : in  STD_LOGIC;
-           led : out  STD_LOGIC_VECTOR (7 downto 0));
+    Port ( 
+				clk : in  STD_LOGIC;
+				switch : in STD_LOGIC_VECTOR(7 downto 0);
+				led : out  STD_LOGIC_VECTOR (7 downto 0)
+			);
 end chenillard;
 
 	
@@ -47,7 +50,8 @@ COMPONENT clk_div
 COMPONENT shift_vector is
     Port ( 
 				clk_div_sign : in  STD_LOGIC;
-           led : out  STD_LOGIC_VECTOR (7 downto 0)
+				switch : in STD_LOGIC_VECTOR(7 downto 0);
+				led : out  STD_LOGIC_VECTOR (7 downto 0)
 		);
 	END COMPONENT;
 	
@@ -56,7 +60,7 @@ signal clk_div_sign : STD_LOGIC;
 begin
 
 clk_div1 :clk_div  port map (clk => clk, clk_4hz => clk_div_sign);
-shift_vector1 : shift_vector port map ( clk_div_sign => clk_div_sign, led => led);
+shift_vector1 : shift_vector port map ( clk_div_sign => clk_div_sign, switch=> switch, led => led);
 
 end Behavioral;
 

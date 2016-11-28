@@ -1,0 +1,2 @@
+vhdtdtfi -prj Nexys3V6 -o /home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/IP_mul16.vhi -lib work /home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6//IPmul16.vhd -module IP_mul16 -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
+vhdtdtfi -prj Nexys3V6 -o /home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/IP_mul16.vhi -lib work /home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6//IPmul16.vhd -module IP_mul16 -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

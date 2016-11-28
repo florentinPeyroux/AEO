@@ -1,0 +1,12 @@
+NET "anodes<0>" LOC = "N16";
+NET "anodes<1>" LOC = "N15";
+NET "anodes<2>" LOC = "P18";
+NET "anodes<3>" LOC = "P17";
+NET "sevenseg<0>" LOC = "T17";
+NET "sevenseg<1>" LOC = "T18";
+NET "sevenseg<2>" LOC = "U17";
+NET "sevenseg<3>" LOC = "U18";
+NET "sevenseg<4>" LOC = "M14";
+NET "sevenseg<5>" LOC = "N14";
+NET "sevenseg<6>" LOC = "L14";
+NET "clk" LOC = "V10";

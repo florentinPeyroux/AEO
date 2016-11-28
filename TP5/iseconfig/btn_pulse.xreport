@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-11T17:45:27</DateModified>
+  <DateModified>2016-11-07T14:03:00</DateModified>
   <ModuleName>btn_pulse</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/m1/peyroux/Documents/M1S1/AEO/TP5/iseconfig/btn_pulse.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/m1/peyroux/Documents/M1S1/AEO/TP5</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/m1/peyroux/Documents/M1S1/AEO/TP5/</ImplementationReportsDirectory>
   <DateInitialized>2016-10-11T17:45:26</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: chenillard.prj
@@ -126,9 +126,10 @@ Parsing architecture <Behavioral> of entity <chenillard>.
 Elaborating entity <chenillard> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <clk_div> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "/home/m1/peyroux/Documents/M1S1/AEO/TP41/clk_div.vhd" Line 52: clk_4hz_sig should be on the sensitivity list of the process
 
 Elaborating entity <shift_vector> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/m1/peyroux/Documents/M1S1/AEO/TP41/shift_vector.vhd" Line 54: temp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/m1/peyroux/Documents/M1S1/AEO/TP41/shift_vector.vhd" Line 68: temp should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -142,23 +143,28 @@ Unit <chenillard> synthesized.
 
 Synthesizing Unit <clk_div>.
     Related source file is "/home/m1/peyroux/Documents/M1S1/AEO/TP41/clk_div.vhd".
-    Found 24-bit register for signal <counter>.
-    Found 24-bit adder for signal <counter[23]_GND_5_o_add_2_OUT> created at line 1241.
-WARNING:Xst:737 - Found 1-bit latch for signal <state>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit register for signal <clk_4hz_sig>.
+    Found 24-bit register for signal <compteur>.
+    Found 24-bit adder for signal <GND_5_o_compteur[23]_add_1_OUT> created at line 49.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  24 D-type flip-flop(s).
-	inferred   1 Latch(s).
-	inferred   1 Multiplexer(s).
+	inferred  25 D-type flip-flop(s).
 Unit <clk_div> synthesized.
 
 Synthesizing Unit <shift_vector>.
     Related source file is "/home/m1/peyroux/Documents/M1S1/AEO/TP41/shift_vector.vhd".
     Found 8-bit register for signal <temp>.
+    Found 32-bit register for signal <cpt>.
+    Found 1-bit register for signal <sens>.
+    Found 32-bit adder for signal <cpt[31]_GND_6_o_add_6_OUT> created at line 64.
+    Found 32-bit subtractor for signal <cpt[31]_GND_6_o_sub_3_OUT<31:0>> created at line 57.
+    Found 1-bit 8-to-1 multiplexer for signal <cpt[2]_switch[7]_Mux_0_o> created at line 49.
     Summary:
-	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
 Unit <shift_vector> synthesized.
-RTL-Simplification CPUSTAT: 0.00 
+RTL-Simplification CPUSTAT: 0.01 
 RTL-BasicInf CPUSTAT: 0.08 
 RTL-BasicOpt CPUSTAT: 0.00 
 RTL-Remain-Bus CPUSTAT: 0.00 
@@ -167,15 +173,18 @@ RTL-Remain-Bus CPUSTAT: 0.00
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
+# Adders/Subtractors                                   : 2
  24-bit adder                                          : 1
-# Registers                                            : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 5
+ 1-bit register                                        : 2
  24-bit register                                       : 1
+ 32-bit register                                       : 1
  8-bit register                                        : 1
-# Latches                                              : 1
- 1-bit latch                                           : 1
-# Multiplexers                                         : 1
- 24-bit 2-to-1 multiplexer                             : 1
+# Multiplexers                                         : 6
+ 1-bit 2-to-1 multiplexer                              : 4
+ 1-bit 8-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
 
 =========================================================================
 
@@ -185,23 +194,61 @@ Macro Statistics
 
 
 Synthesizing (advanced) Unit <clk_div>.
-The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <compteur>: 1 register on signal <compteur>.
 Unit <clk_div> synthesized (advanced).
+
+Synthesizing (advanced) Unit <shift_vector>.
+The following registers are absorbed into counter <cpt>: 1 register on signal <cpt>.
+Unit <shift_vector> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 1
+# Counters                                             : 2
  24-bit up counter                                     : 1
-# Registers                                            : 8
- Flip-Flops                                            : 8
+ 32-bit updown counter                                 : 1
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+# Multiplexers                                         : 6
+ 1-bit 2-to-1 multiplexer                              : 4
+ 1-bit 8-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2677 - Node <cpt_3> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_4> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_5> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_6> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_7> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_8> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_9> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_10> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_11> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_12> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_13> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_14> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_15> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_16> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_17> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_18> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_19> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_20> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_21> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_22> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_23> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_24> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_25> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_26> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_27> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_28> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_29> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_30> of sequential type is unconnected in block <shift_vector>.
+WARNING:Xst:2677 - Node <cpt_31> of sequential type is unconnected in block <shift_vector>.
 
 Optimizing unit <chenillard> ...
 
@@ -217,8 +264,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 32
- Flip-Flops                                            : 32
+# Registers                                            : 37
+ Flip-Flops                                            : 37
 
 =========================================================================
 
@@ -241,22 +288,24 @@ Top Level Output File Name         : chenillard.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 107
+# BELS                             : 135
 #      GND                         : 1
-#      INV                         : 2
+#      INV                         : 1
 #      LUT1                        : 23
-#      LUT4                        : 1
-#      LUT5                        : 24
-#      LUT6                        : 8
-#      MUXCY                       : 23
+#      LUT3                        : 10
+#      LUT4                        : 4
+#      LUT5                        : 29
+#      LUT6                        : 14
+#      MUXCY                       : 25
 #      VCC                         : 1
-#      XORCY                       : 24
-# FlipFlops/Latches                : 33
-#      FD                          : 32
-#      LD                          : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 37
+#      FD                          : 34
+#      FDE                         : 3
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 8
+# IO Buffers                       : 16
+#      IBUF                        : 8
 #      OBUF                        : 8
 
 Device utilization summary:
@@ -266,20 +315,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              33  out of  18224     0%  
- Number of Slice LUTs:                   58  out of   9112     0%  
-    Number used as Logic:                58  out of   9112     0%  
+ Number of Slice Registers:              37  out of  18224     0%  
+ Number of Slice LUTs:                   81  out of   9112     0%  
+    Number used as Logic:                81  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     66
-   Number with an unused Flip Flop:      33  out of     66    50%  
-   Number with an unused LUT:             8  out of     66    12%  
-   Number of fully used LUT-FF pairs:    25  out of     66    37%  
+ Number of LUT Flip Flop pairs used:     81
+   Number with an unused Flip Flop:      44  out of     81    54%  
+   Number with an unused LUT:             0  out of     81     0%  
+   Number of fully used LUT-FF pairs:    37  out of     81    45%  
    Number of unique control sets:         3
 
 IO Utilization: 
- Number of IOs:                           9
- Number of bonded IOBs:                   9  out of    232     3%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    232     7%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -302,16 +351,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
--------------------------------------------------------------------------------------+---------------------------+-------+
-Clock Signal                                                                         | Clock buffer(FF name)     | Load  |
--------------------------------------------------------------------------------------+---------------------------+-------+
-clk_div1/counter[23]_PWR_5_o_equal_1_o(clk_div1/counter[23]_PWR_5_o_equal_1_o<23>5:O)| NONE(*)(clk_div1/state)   | 1     |
-clk                                                                                  | BUFGP                     | 24    |
-clk_div1/state                                                                       | NONE(shift_vector1/temp_7)| 8     |
--------------------------------------------------------------------------------------+---------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+-----------------------------------+--------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)    | Load  |
+-----------------------------------+--------------------------+-------+
+clk_div1/clk_4hz_sig               | NONE(shift_vector1/cpt_2)| 12    |
+clk                                | BUFGP                    | 25    |
+-----------------------------------+--------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -322,9 +367,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.226ns (Maximum Frequency: 309.972MHz)
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 3.634ns
+   Minimum period: 4.001ns (Maximum Frequency: 249.966MHz)
+   Minimum input arrival time before clock: 4.838ns
+   Maximum output required time after clock: 3.762ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -332,109 +377,90 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk_div1/counter[23]_PWR_5_o_equal_1_o'
-  Clock period: 2.149ns (frequency: 465.419MHz)
-  Total number of paths / destination ports: 1 / 1
+Timing constraint: Default period analysis for Clock 'clk_div1/clk_4hz_sig'
+  Clock period: 4.001ns (frequency: 249.966MHz)
+  Total number of paths / destination ports: 333 / 15
 -------------------------------------------------------------------------
-Delay:               2.149ns (Levels of Logic = 1)
-  Source:            clk_div1/state (LATCH)
-  Destination:       clk_div1/state (LATCH)
-  Source Clock:      clk_div1/counter[23]_PWR_5_o_equal_1_o falling
-  Destination Clock: clk_div1/counter[23]_PWR_5_o_equal_1_o falling
+Delay:               4.001ns (Levels of Logic = 2)
+  Source:            shift_vector1/temp_6 (FF)
+  Destination:       shift_vector1/cpt_2 (FF)
+  Source Clock:      clk_div1/clk_4hz_sig rising
+  Destination Clock: clk_div1/clk_4hz_sig rising
 
-  Data Path: clk_div1/state to clk_div1/state
+  Data Path: shift_vector1/temp_6 to shift_vector1/cpt_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               9   0.498   0.829  clk_div1/state (clk_div1/state)
-     INV:I->O              1   0.206   0.579  clk_div1/state_INV_2_o1_INV_0 (clk_div1/state_INV_2_o)
-     LD:D                      0.037          clk_div1/state
+     FD:C->Q               5   0.447   1.079  shift_vector1/temp_6 (shift_vector1/temp_6)
+     LUT6:I0->O            2   0.203   0.864  shift_vector1/GND_6_o_temp[7]_equal_2_o<7>11 (shift_vector1/N3)
+     LUT6:I2->O           11   0.203   0.882  shift_vector1/_n0043_inv1 (shift_vector1/_n0043_inv)
+     FDE:CE                    0.322          shift_vector1/cpt_0
     ----------------------------------------
-    Total                      2.149ns (0.741ns logic, 1.408ns route)
-                                       (34.5% logic, 65.5% route)
+    Total                      4.001ns (1.175ns logic, 2.826ns route)
+                                       (29.4% logic, 70.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 3.226ns (frequency: 309.972MHz)
-  Total number of paths / destination ports: 876 / 24
+  Clock period: 3.376ns (frequency: 296.213MHz)
+  Total number of paths / destination ports: 901 / 25
 -------------------------------------------------------------------------
-Delay:               3.226ns (Levels of Logic = 22)
-  Source:            clk_div1/counter_0 (FF)
-  Destination:       clk_div1/counter_19 (FF)
+Delay:               3.376ns (Levels of Logic = 2)
+  Source:            clk_div1/compteur_8 (FF)
+  Destination:       clk_div1/clk_4hz_sig (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: clk_div1/counter_0 to clk_div1/counter_19
+  Data Path: clk_div1/compteur_8 to clk_div1/clk_4hz_sig
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               3   0.447   0.650  clk_div1/counter_0 (clk_div1/counter_0)
-     INV:I->O              1   0.206   0.000  clk_div1/Mcount_counter_lut<0>_INV_0 (clk_div1/Mcount_counter_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  clk_div1/Mcount_counter_cy<0> (clk_div1/Mcount_counter_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<1> (clk_div1/Mcount_counter_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<2> (clk_div1/Mcount_counter_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<3> (clk_div1/Mcount_counter_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<4> (clk_div1/Mcount_counter_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<5> (clk_div1/Mcount_counter_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<6> (clk_div1/Mcount_counter_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<7> (clk_div1/Mcount_counter_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<8> (clk_div1/Mcount_counter_cy<8>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<9> (clk_div1/Mcount_counter_cy<9>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<10> (clk_div1/Mcount_counter_cy<10>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<11> (clk_div1/Mcount_counter_cy<11>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<12> (clk_div1/Mcount_counter_cy<12>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<13> (clk_div1/Mcount_counter_cy<13>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<14> (clk_div1/Mcount_counter_cy<14>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<15> (clk_div1/Mcount_counter_cy<15>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<16> (clk_div1/Mcount_counter_cy<16>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<17> (clk_div1/Mcount_counter_cy<17>)
-     MUXCY:CI->O           1   0.019   0.000  clk_div1/Mcount_counter_cy<18> (clk_div1/Mcount_counter_cy<18>)
-     XORCY:CI->O           1   0.180   0.924  clk_div1/Mcount_counter_xor<19> (Result<19>)
-     LUT5:I0->O            1   0.203   0.000  clk_div1/Mcount_counter_eqn_191 (clk_div1/Mcount_counter_eqn_19)
-     FD:D                      0.102          clk_div1/counter_19
+     FD:C->Q               2   0.447   0.981  clk_div1/compteur_8 (clk_div1/compteur_8)
+     LUT6:I0->O           25   0.203   1.440  clk_div1/compteur[23]_PWR_5_o_equal_1_o<23>4 (clk_div1/compteur[23]_PWR_5_o_equal_1_o<23>3)
+     LUT5:I1->O            1   0.203   0.000  clk_div1/clk_4hz_sig_rstpot (clk_div1/clk_4hz_sig_rstpot)
+     FD:D                      0.102          clk_div1/clk_4hz_sig
     ----------------------------------------
-    Total                      3.226ns (1.652ns logic, 1.574ns route)
-                                       (51.2% logic, 48.8% route)
+    Total                      3.376ns (0.955ns logic, 2.421ns route)
+                                       (28.3% logic, 71.7% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk_div1/state'
-  Clock period: 1.165ns (frequency: 858.185MHz)
-  Total number of paths / destination ports: 8 / 8
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_div1/clk_4hz_sig'
+  Total number of paths / destination ports: 232 / 15
 -------------------------------------------------------------------------
-Delay:               1.165ns (Levels of Logic = 0)
-  Source:            shift_vector1/temp_6 (FF)
-  Destination:       shift_vector1/temp_7 (FF)
-  Source Clock:      clk_div1/state rising
-  Destination Clock: clk_div1/state rising
+Offset:              4.838ns (Levels of Logic = 3)
+  Source:            switch<4> (PAD)
+  Destination:       shift_vector1/cpt_2 (FF)
+  Destination Clock: clk_div1/clk_4hz_sig rising
 
-  Data Path: shift_vector1/temp_6 to shift_vector1/temp_7
+  Data Path: switch<4> to shift_vector1/cpt_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.447   0.616  shift_vector1/temp_6 (shift_vector1/temp_6)
-     FD:D                      0.102          shift_vector1/temp_7
+     IBUF:I->O             1   1.222   0.944  switch_4_IBUF (switch_4_IBUF)
+     LUT6:I0->O           14   0.203   1.062  shift_vector1/Mmux_cpt[2]_switch[7]_Mux_0_o_3 (shift_vector1/Mmux_cpt[2]_switch[7]_Mux_0_o_3)
+     LUT6:I4->O           11   0.203   0.882  shift_vector1/_n0043_inv1 (shift_vector1/_n0043_inv)
+     FDE:CE                    0.322          shift_vector1/cpt_0
     ----------------------------------------
-    Total                      1.165ns (0.549ns logic, 0.616ns route)
-                                       (47.1% logic, 52.9% route)
+    Total                      4.838ns (1.950ns logic, 2.888ns route)
+                                       (40.3% logic, 59.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_div1/state'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_div1/clk_4hz_sig'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              3.634ns (Levels of Logic = 1)
+Offset:              3.762ns (Levels of Logic = 1)
   Source:            shift_vector1/temp_7 (FF)
   Destination:       led<7> (PAD)
-  Source Clock:      clk_div1/state rising
+  Source Clock:      clk_div1/clk_4hz_sig rising
 
   Data Path: shift_vector1/temp_7 to led<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.447   0.616  shift_vector1/temp_7 (shift_vector1/temp_7)
+     FD:C->Q               6   0.447   0.744  shift_vector1/temp_7 (shift_vector1/temp_7)
      OBUF:I->O                 2.571          led_7_OBUF (led<7>)
     ----------------------------------------
-    Total                      3.634ns (3.018ns logic, 0.616ns route)
-                                       (83.0% logic, 17.0% route)
+    Total                      3.762ns (3.018ns logic, 0.744ns route)
+                                       (80.2% logic, 19.8% route)
 
 =========================================================================
 
@@ -446,37 +472,29 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.226|         |         |         |
+clk            |    3.376|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock clk_div1/counter[23]_PWR_5_o_equal_1_o
---------------------------------------+---------+---------+---------+---------+
-                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------------------------+---------+---------+---------+---------+
-clk_div1/counter[23]_PWR_5_o_equal_1_o|         |         |    2.149|         |
---------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock clk_div1/state
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_div1/state |    1.165|         |         |         |
----------------+---------+---------+---------+---------+
+Clock to Setup on destination clock clk_div1/clk_4hz_sig
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+clk_div1/clk_4hz_sig|    4.001|         |         |         |
+--------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.33 secs
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.41 secs
  
 --> 
 
 
-Total memory usage is 363140 kilobytes
+Total memory usage is 363480 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :   31 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

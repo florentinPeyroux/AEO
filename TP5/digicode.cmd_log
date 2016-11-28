@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "/home/m1/peyroux/Documents/M1S1/AEO/TP5/digicode.xst" -ofn "/home/m1/peyroux/Documents/M1S1/AEO/TP5/digicode.syr" 
+xst -intstyle ise -ifn "/home/m1/peyroux/Documents/M1S1/AEO/TP5/digicode.xst" -ofn "/home/m1/peyroux/Documents/M1S1/AEO/TP5/digicode.syr" 
+xst -intstyle ise -ifn "/home/m1/peyroux/Documents/M1S1/AEO/TP5/digicode.xst" -ofn "/home/m1/peyroux/Documents/M1S1/AEO/TP5/digicode.syr" 
+xst -intstyle ise -ifn "/home/m1/peyroux/Documents/M1S1/AEO/TP5/digicode.xst" -ofn "/home/m1/peyroux/Documents/M1S1/AEO/TP5/digicode.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digicode.ucf -p xc6slx16-csg324-3 digicode.ngc digicode.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o digicode_map.ncd digicode.ngd digicode.pcf 
+par -w -intstyle ise -ol high -mt off digicode_map.ncd digicode.ncd digicode.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml digicode.twx digicode.ncd -o digicode.twr digicode.pcf -ucf digicode.ucf 
+bitgen -intstyle ise -f digicode.ut digicode.ncd 
+xst -intstyle ise -ifn "/home/m1/peyroux/Documents/M1S1/AEO/TP5/digicode.xst" -ofn "/home/m1/peyroux/Documents/M1S1/AEO/TP5/digicode.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digicode.ucf -p xc6slx16-csg324-3 digicode.ngc digicode.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o digicode_map.ncd digicode.ngd digicode.pcf 
+par -w -intstyle ise -ol high -mt off digicode_map.ncd digicode.ncd digicode.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml digicode.twx digicode.ncd -o digicode.twr digicode.pcf -ucf digicode.ucf 
+bitgen -intstyle ise -f digicode.ut digicode.ncd 

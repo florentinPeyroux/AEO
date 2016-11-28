@@ -1,0 +1,7 @@
+vhdl work "fpd.vhd"
+vhdl work "clk_div.vhd"
+vhdl work "shift.vhd"
+vhdl work "fsm.vhd"
+vhdl work "clkdiv.vhd"
+vhdl work "btn_pulse.vhd"
+vhdl work "digicode.vhdl"

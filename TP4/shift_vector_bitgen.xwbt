@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/home/m1/peyroux/Documents/M1S1/AEO/TP4/shift_vector.ncd
-OUTFILE=/home/m1/peyroux/Documents/M1S1/AEO/TP4/shift_vector.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=/home/m1/peyroux/Documents/M1S1/AEO/TP4
-LICENSE=WebPack
-USER_INFO=0_0_579

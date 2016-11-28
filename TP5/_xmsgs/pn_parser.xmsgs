@@ -8,5 +8,26 @@
 <!-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/m1/peyroux/Documents/M1S1/AEO/TP5/btn_pulse.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/m1/peyroux/Documents/M1S1/AEO/TP5/clk_div.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/m1/peyroux/Documents/M1S1/AEO/TP5/clkdiv.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/m1/peyroux/Documents/M1S1/AEO/TP5/digicode.vhdl&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/m1/peyroux/Documents/M1S1/AEO/TP5/fpd.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/m1/peyroux/Documents/M1S1/AEO/TP5/fsm.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/m1/peyroux/Documents/M1S1/AEO/TP5/shift.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 

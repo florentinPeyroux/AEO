@@ -1,0 +1,29 @@
+Command line:
+   IP_Rdm_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56575
+
+Tue Nov 22 16:36:59 2016
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 157.704 Meg
+
+ Total Signals          : 12
+ Total Nets             : 111
+ Total Signal Drivers   : 4
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 3
+ Total Traceable Variables  : 10
+ Total Scalar Nets and Variables : 483
+Total Line Count : 7
+
+ Total Simulation Time: 0.02 sec
+
+ Current Memory Usage: 232.153 Meg
+
+Tue Nov 22 16:37:34 2016
+

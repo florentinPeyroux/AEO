@@ -1,0 +1,5 @@
+[Inputs]
+clk_div_sign
+[Outputs]
+=led[7:0]=
+[BiDir]

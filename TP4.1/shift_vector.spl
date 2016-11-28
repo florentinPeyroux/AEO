@@ -1,6 +1,0 @@
-[Inputs]
-clk_div_sign
-=btn[4:0]=
-[Outputs]
-=led[7:0]=
-[BiDir]

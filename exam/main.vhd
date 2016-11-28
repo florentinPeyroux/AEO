@@ -64,7 +64,7 @@ signal E : std_logic;
 signal result : std_logic_vector (3 downto 0);
 
 begin
-data <= switches(7 downto 0) & switches(3 downto 0) & switches(7 downto 4);
+data <= switches(7 downto 4) & switches(4) &switches(5) &switches(6) &switches(7) & switches(3 downto 0) & switches(0) &switches(1) &switches(2) &switches(3);
 clkdiv1 : clkdiv port map(clk => clk, reset => '0', E190 => E);
 fsm1 : fsm port map(clk => E, reset =>'0', data => data, SW => result, anodes => anodes);
 x7seg1 : x7seg port map (sw => result, sevenseg => sevenseg);
