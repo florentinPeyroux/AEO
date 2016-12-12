@@ -1,0 +1,6 @@
+[Inputs]
+clk
+init
+[Outputs]
+=fiboout[31:0]=
+[BiDir]

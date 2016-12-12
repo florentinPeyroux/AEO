@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : afficheur.vhf
--- /___/   /\     Timestamp : 11/08/2016 17:20:43
+-- /___/   /\     Timestamp : 12/05/2016 18:11:32
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -198,10 +198,10 @@ architecture BEHAVIORAL of mux4x4_MUSER_afficheur is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_5";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_6";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_7";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_8";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_4";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_5";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_6";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_7";
 begin
    XLXI_1 : M4_1E_HXILINX_afficheur
       port map (D0=>I0(3),
@@ -301,7 +301,7 @@ architecture BEHAVIORAL of afficheur is
              anodes    : out   std_logic_vector (3 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_9";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_8";
 begin
    XLXI_1 : x7seg
       port map (state(1 downto 0)=>state7seg(1 downto 0),

@@ -57,30 +57,49 @@ signal master : std_logic :='1';
 			 
   signal      rx_out:  std_logic;
   type rom_array is array (natural range <>) of std_logic_vector ( 63 downto 0 ) ;
-constant  rom : rom_array := ( 
- --  master code 
- x"0c00_0000_0024_1c00", -- 0x0000
- x"1000_0000_0020_1c00", -- 0x0004
- x"1c00_0000_0000_1c00", -- 0x0008
- x"1c00_0000_0000_1c00", -- 0x000c
- x"1c00_0000_0000_1c00", -- 0x0010
- x"1c00_0000_0000_1c00", -- 0x0014
- x"0000_0000_0000_0000", -- 0x0018
- x"0000_0000_0000_0000", -- 0x001c
- x"2088_a003_1400_ffff", -- 0x0020
- x"20ff_a003_2fff_2fff", -- 0x0024
- x"c82d_2000_a007_a007", -- 0x0028
- x"8000_8806_a823_8007", -- 0x002c
- x"a833_a000_07fa_8006", -- 0x0030
- x"8006_03ef_1c00_ffff", -- 0x0034
- x"ffff_ffff_ffff_ffff", -- 0x0038
- --  slave code 
- x"1c00_ffff_ffff_ffff", -- 0x0000
- x"ffff_ffff_ffff_ffff"  -- 0x0004
+--constant  rom : rom_array := ( 
+-- --  master code 
+-- x"0c00_0000_0024_1c00", -- 0x0000
+-- x"1000_0000_0020_1c00", -- 0x0004
+-- x"1c00_0000_0000_1c00", -- 0x0008
+-- x"1c00_0000_0000_1c00", -- 0x000c
+-- x"1c00_0000_0000_1c00", -- 0x0010
+-- x"1c00_0000_0000_1c00", -- 0x0014
+-- x"0000_0000_0000_0000", -- 0x0018
+-- x"0000_0000_0000_0000", -- 0x001c
+-- x"2088_a003_1400_ffff", -- 0x0020
+-- x"20ff_a003_2fff_2fff", -- 0x0024
+-- x"c82d_2000_a007_a007", -- 0x0028
+-- x"8000_8806_a823_8007", -- 0x002c
+-- x"a833_a000_07fa_8006", -- 0x0030
+-- x"8006_03ef_1c00_ffff", -- 0x0034
+-- x"ffff_ffff_ffff_ffff", -- 0x0038
+-- --  slave code 
+-- x"1c00_ffff_ffff_ffff", -- 0x0000
+-- x"ffff_ffff_ffff_ffff"  -- 0x0004
+--);
+--
+
+constant  rom : rom_array := (
+--  Master code
+
+ x"0c00_0000_001c_ffff", -- 0
+ x"a002_8000_8000_1400", -- 4
+ x"2010_a013_81f8_81f9", -- 8
+ x"4001_6000_4002_6000", -- c
+ x"8812_81fa_ffff_ffff", -- 10
+ x"1000_0000_0004_8812", -- 14
+ x"1000_0000_0004_1400", -- 18
+ x"1000_0000_0008_1c00", -- 1c
+ x"ffff_ffff_ffff_ffff", -- 20
+--  Slave code
+ x"1000_0000_000c_1c00", -- 0
+ x"8a00_1c00_8000_1c00", -- 4
+ x"8a02_c820_a201_1c00", -- 8
+ x"1400_ffff_ffff_ffff", -- c
+ x"ffff_ffff_ffff_ffff"  -- 10
+
 );
-
-
-
 
 signal count :integer := 0;
 

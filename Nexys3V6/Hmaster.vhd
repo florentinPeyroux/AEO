@@ -56,8 +56,8 @@ end HMaster;
 architecture Behavioral of HMaster is
 
 ----- salve
-constant NX_SLAVE : integer := 0;
-constant NY_SLAVE : integer := 0;
+constant NX_SLAVE : integer := 2;
+constant NY_SLAVE : integer := 1;
 
 constant NBSLAVE : integer := NX_SLAVE * NY_SLAVE;
 --==================================================================
@@ -321,18 +321,18 @@ COMPONENT IP_waitBt
 		IPdone : OUT std_logic
 		);
 	END COMPONENT;	
---	
---COMPONENT IP_fibo
---	GENERIC (Mycode : std_logic_vector (10 downto 0));
---	PORT(
---		Tin : IN std_logic_vector(31 downto 0);
---		clk : IN std_logic;
---		reset : in std_logic;
---		IPcode : IN std_logic_vector(10 downto 0);
---		Tout : OUT std_logic_vector(31 downto 0);		
---		IPdone : out std_logic
---		);
---	END COMPONENT;	
+	
+COMPONENT IP_fibo
+	GENERIC (Mycode : std_logic_vector (10 downto 0));
+	PORT(
+		Tin : IN std_logic_vector(31 downto 0);
+		clk : IN std_logic;
+		reset : in std_logic;
+		IPcode : IN std_logic_vector(10 downto 0);
+		Tout : OUT std_logic_vector(31 downto 0);		
+		IPdone : out std_logic
+		);
+	END COMPONENT;	
 
 COMPONENT IP_Funit
 	GENERIC (Mycode : std_logic_vector (5 downto 0));
@@ -720,18 +720,18 @@ Inst_IPwaitBt: IP_waitBt
 	);
 end generate Mwaitbtn;
 	
---Mfibo : if genM_fibo = '1' generate
---	Inst_IPfibo: IP_fibo
---		generic map (Mycode =>IPfibo)
---		PORT MAP(
---		Tin => Tbusld( 31 downto 0),
---		clk => clock,
---		reset => reset,
---		IPcode => Icode,
---		Tout => Tbusst,
---		IPdone => IPdft
---	);	
---end generate Mfibo;
+Mfibo : if genM_fibo = '1' generate
+	Inst_IPfibo: IP_fibo
+		generic map (Mycode =>IPfibo)
+		PORT MAP(
+		Tin => Tbusld( 31 downto 0),
+		clk => clock,
+		reset => reset,
+		IPcode => Icode,
+		Tout => Tbusst,
+		IPdone => IPdft
+	);	
+end generate Mfibo;
 
 Mdelay : if genM_delay = '1' generate
 	Inst_IP_delay: IP_delay 

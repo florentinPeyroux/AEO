@@ -72,7 +72,7 @@ constant GenM_bufout : std_logic :='1';
 constant GenS_bufout : std_logic :='0';
 constant IPBufOut 		: code := "00000000010";  -- 1/0 0
 
-constant GenM_led : std_logic :='1';
+constant GenM_led : std_logic :='0';
 constant GenS_led : std_logic :='0';
 constant IPLed 			: code := "00000000011";   -- 1/0 1 
 
@@ -86,8 +86,8 @@ constant GenS_identity : std_logic :='1';
 constant IPidentity  	: code := "00000000101";	-- x y  manip sur les sommets de piles
 
 -- dta stack T to R, R to T 6 et 7
-constant GenM_datastack : std_logic :='1';
-constant GenS_datastack : std_logic :='1';
+constant GenM_datastack : std_logic :='0';
+constant GenS_datastack : std_logic :='0';
 constant IPDataStack		: std_logic_vector (9 downto 0) :="0000000011";
 constant IDataPush		: std_logic_vector (0 downto 0) :="1";
 constant IDataPop		: std_logic_vector (0 downto 0) :="0";
@@ -123,8 +123,8 @@ constant IPNip 			: code := IPStack & INip;  -- 2 1
 constant IPclearstack 			: code := IPStack & Iclearstack;  -- 2 1
 
 ---- IP RDM  F
-constant GenM_rdm : std_logic :='1';
-constant GenS_rdm : std_logic :='1';
+constant GenM_rdm : std_logic :='0';
+constant GenS_rdm : std_logic :='0';
 constant IPRdm 		: code := "00000010000";  --  0  1
 
 
@@ -137,8 +137,8 @@ constant IPE2M			: code := IPME & "0";
 
 -- mul16 14
 
-constant GenM_mul16 : std_logic :='1';
-constant GenS_mul16 : std_logic :='1';
+constant GenM_mul16 : std_logic :='0';
+constant GenS_mul16 : std_logic :='0';
 constant IPmul16	: code := "00000010100";  --   2 1
 
 -- muladd not used 15
@@ -147,8 +147,8 @@ constant GenS_muladd : std_logic :='0';
 constant IPmuladd 	: code := "00000010101";  --   3 1
 
 -- IPunit  from 20 to 3F
-constant GenM_funit : std_logic :='1';
-constant GenS_Funit : std_logic :='1';
+constant GenM_funit : std_logic :='0';
+constant GenS_Funit : std_logic :='0';
 constant IPFunit		: std_logic_vector (5 downto 0) :="000001";
 
 -- 32 result bit(4) = 0
@@ -192,14 +192,14 @@ constant IPGe 				: std_logic_vector (4 downto 0) := "11101";  -- 2 1
 -- regsiter file
 -- 40 4F 
 --  register load  40 -- 47   store 48 -- 4F
-constant GenM_register : std_logic :='1';
+constant GenM_register : std_logic :='0';
 constant GenS_register : std_logic :='0';
 constant IPregister :  std_logic_vector (6 downto 0) :="0000100";
 
 
 -- local ram
 --  50 51
-constant genM_RAM : std_logic :='1';
+constant genM_RAM : std_logic :='0';
 constant genS_RAM : std_logic :='0';
 constant IPRAM			: std_logic_vector (9 downto 0) :="0000101000";
 constant IPREAD			: code := IPME & "0";
@@ -243,7 +243,7 @@ constant GenS_sleep : std_logic :='1';
 constant IPsleep  : code := "01000000100";
 --  long IP
 --401
-constant GenM_delay : std_logic :='1';
+constant GenM_delay : std_logic :='0';
 constant GenS_delay : std_logic :='0';
 constant IPdelay 		   : code := "10000000001";  -- 1 0
 -- 402
@@ -251,7 +251,7 @@ constant GenM_waitbtn : std_logic :='1';
 constant GenS_waitbtn : std_logic :='0';
 constant IPWaitBtn 		: code := "10000000010";   -- 1 0
 -- 403
-constant GenM_fibo : std_logic :='1';
+constant GenM_fibo : std_logic :='0';
 constant GenS_fibo : std_logic :='0';
 constant IPfibo 		: code := "10000000011";   -- 1 0
 -- 5FF

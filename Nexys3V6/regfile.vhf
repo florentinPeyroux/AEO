@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : regfile.vhf
--- /___/   /\     Timestamp : 11/08/2016 17:20:42
+-- /___/   /\     Timestamp : 11/29/2016 16:15:10
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -190,7 +190,7 @@ architecture BEHAVIORAL of regfile is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_4";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_0";
 begin
    mux2 : mux2x32
       port map (sel=>Nreg(2),

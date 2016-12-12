@@ -1,0 +1,410 @@
+Release 12.4 ngdbuild M.81d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3
+fibogen.ngc fibogen.ngd
+
+Reading NGO file "/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/fibogen.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Nexys3.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "mclk" TNM_NET = "clk_pin";>
+   [Nexys3.ucf(11)]: NET "mclk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_clk_pin = PERIOD "clk_pin"
+   10 ns;> [Nexys3.ucf(12)]: Unable to find an active 'TNM' or 'TimeGrp'
+   constraint named 'clk_pin'.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "mclk" LOC = V10;> [Nexys3.ucf(18)]:
+   NET "mclk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "mclk" LOC = V10;> [Nexys3.ucf(18)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <net "rx_in" Loc = N17;>
+   [Nexys3.ucf(19)]: NET "rx_in" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<net "rx_in" Loc = N17;> [Nexys3.ucf(19)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "a_to_g[0]" LOC = T17;>
+   [Nexys3.ucf(21)]: NET "a_to_g[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "a_to_g[0]" LOC = T17;> [Nexys3.ucf(21)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "a_to_g[1]" LOC = T18;>
+   [Nexys3.ucf(22)]: NET "a_to_g[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "a_to_g[1]" LOC = T18;> [Nexys3.ucf(22)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "a_to_g[2]" LOC = U17;>
+   [Nexys3.ucf(23)]: NET "a_to_g[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "a_to_g[2]" LOC = U17;> [Nexys3.ucf(23)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "a_to_g[3]" LOC = U18;>
+   [Nexys3.ucf(24)]: NET "a_to_g[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "a_to_g[3]" LOC = U18;> [Nexys3.ucf(24)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "a_to_g[4]" LOC = M14;>
+   [Nexys3.ucf(25)]: NET "a_to_g[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "a_to_g[4]" LOC = M14;> [Nexys3.ucf(25)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "a_to_g[5]" LOC = N14;>
+   [Nexys3.ucf(26)]: NET "a_to_g[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "a_to_g[5]" LOC = N14;> [Nexys3.ucf(26)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "a_to_g[6]" LOC = L14;>
+   [Nexys3.ucf(27)]: NET "a_to_g[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "a_to_g[6]" LOC = L14;> [Nexys3.ucf(27)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "an[3]" LOC = P17;>
+   [Nexys3.ucf(30)]: NET "an[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "an[3]" LOC = P17;> [Nexys3.ucf(30)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "an[2]" LOC = P18;>
+   [Nexys3.ucf(31)]: NET "an[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "an[2]" LOC = P18;> [Nexys3.ucf(31)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "an[1]" LOC = N15;>
+   [Nexys3.ucf(32)]: NET "an[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "an[1]" LOC = N15;> [Nexys3.ucf(32)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "an[0]" LOC = N16;>
+   [Nexys3.ucf(33)]: NET "an[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "an[0]" LOC = N16;> [Nexys3.ucf(33)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led[0]" LOC = U16;>
+   [Nexys3.ucf(35)]: NET "led[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "led[0]" LOC = U16;> [Nexys3.ucf(35)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led[1]" LOC = V16;>
+   [Nexys3.ucf(37)]: NET "led[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "led[1]" LOC = V16;> [Nexys3.ucf(37)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led[2]" LOC = U15;>
+   [Nexys3.ucf(39)]: NET "led[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "led[2]" LOC = U15;> [Nexys3.ucf(39)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led[3]" LOC = V15;>
+   [Nexys3.ucf(41)]: NET "led[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "led[3]" LOC = V15;> [Nexys3.ucf(41)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led[4]" LOC = M11;>
+   [Nexys3.ucf(43)]: NET "led[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "led[4]" LOC = M11;> [Nexys3.ucf(43)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led[5]" LOC = N11;>
+   [Nexys3.ucf(45)]: NET "led[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "led[5]" LOC = N11;> [Nexys3.ucf(45)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led[6]" LOC = R11;>
+   [Nexys3.ucf(47)]: NET "led[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "led[6]" LOC = R11;> [Nexys3.ucf(47)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led[7]" LOC = T11;>
+   [Nexys3.ucf(49)]: NET "led[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "led[7]" LOC = T11;> [Nexys3.ucf(49)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw[0]" LOC = T10;>
+   [Nexys3.ucf(51)]: NET "sw[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "sw[0]" LOC = T10;> [Nexys3.ucf(51)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw[1]" LOC = T9;> [Nexys3.ucf(53)]:
+   NET "sw[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "sw[1]" LOC = T9;> [Nexys3.ucf(53)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw[2]" LOC = V9;> [Nexys3.ucf(55)]:
+   NET "sw[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "sw[2]" LOC = V9;> [Nexys3.ucf(55)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw[3]" LOC = M8;> [Nexys3.ucf(57)]:
+   NET "sw[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "sw[3]" LOC = M8;> [Nexys3.ucf(57)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw[4]" LOC = N8;> [Nexys3.ucf(59)]:
+   NET "sw[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "sw[4]" LOC = N8;> [Nexys3.ucf(59)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw[5]" LOC = U8;> [Nexys3.ucf(61)]:
+   NET "sw[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "sw[5]" LOC = U8;> [Nexys3.ucf(61)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw[6]" LOC = V8;> [Nexys3.ucf(63)]:
+   NET "sw[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "sw[6]" LOC = V8;> [Nexys3.ucf(63)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "sw[7]" LOC = T5;> [Nexys3.ucf(65)]:
+   NET "sw[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "sw[7]" LOC = T5;> [Nexys3.ucf(65)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn[0]" LOC = D9;>
+   [Nexys3.ucf(67)]: NET "btn[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "btn[0]" LOC = D9;> [Nexys3.ucf(67)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn[1]" LOC = C9;>
+   [Nexys3.ucf(69)]: NET "btn[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "btn[1]" LOC = C9;> [Nexys3.ucf(69)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn[2]" LOC = C4;>
+   [Nexys3.ucf(71)]: NET "btn[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "btn[2]" LOC = C4;> [Nexys3.ucf(71)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn[3]" LOC = A8;>
+   [Nexys3.ucf(73)]: NET "btn[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "btn[3]" LOC = A8;> [Nexys3.ucf(73)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn[4]" LOC = B8;>
+   [Nexys3.ucf(75)]: NET "btn[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "btn[4]" LOC = B8;> [Nexys3.ucf(75)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "PS2_clk" LOC = L12;>
+   [Nexys3.ucf(78)]: NET "PS2_clk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "PS2_clk" LOC = L12;> [Nexys3.ucf(78)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "PS2_Data" LOC = J13;>
+   [Nexys3.ucf(80)]: NET "PS2_Data" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "PS2_Data" LOC = J13;> [Nexys3.ucf(80)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "rx_GPS" LOC = J1;>
+   [Nexys3.ucf(83)]: NET "rx_GPS" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "rx_GPS" LOC = J1;> [Nexys3.ucf(83)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "fix_GPS" LOC = J3;>
+   [Nexys3.ucf(84)]: NET "fix_GPS" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "fix_GPS" LOC = J3;> [Nexys3.ucf(84)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "pps_GPS" LOC = K5;>
+   [Nexys3.ucf(85)]: NET "pps_GPS" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:204 - A target design object for the Locate constraint
+   '<NET "pps_GPS" LOC = K5;> [Nexys3.ucf(85)]' could not be found and so the
+   Locate constraint will be removed.
+
+WARNING:ConstraintSystem:191 - The TNM 'clk_pin', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_clk_pin'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC TS_clk_pin = PERIOD "clk_pin" 10 ns;> [Nexys3.ucf(12)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_clk_pin = PERIOD "clk_pin" 10 ns;> [Nexys3.ucf(12)]
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    40
+  Number of warnings:  42
+
+Total memory usage is 254988 kilobytes
+
+Total REAL time to NGDBUILD completion:  1 sec
+Total CPU time to NGDBUILD completion:   1 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "fibogen.bld"...
