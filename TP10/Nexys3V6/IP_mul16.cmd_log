@@ -1,0 +1,1 @@
+vhdtdtfi -prj TP9 -o /home/m1/benakli/Documents/MasterS1/AEO/TP9/Nexys3V6/IP_mul16.vhi -lib work /home/m1/benakli/Documents/MasterS1/AEO/TP9/Nexys3V6//IPmul16.vhd -module IP_mul16 -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

@@ -10,7 +10,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.52.76.2 $
-Mapped Date    : Tue Dec  6 17:42:33 2016
+Mapped Date    : Tue Dec 13 14:13:57 2016
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:54 - 'xc6slx16' is a WebPack part.
@@ -25,177 +25,386 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 8 secs 
-Total CPU  time at the beginning of Placer: 7 secs 
+Total REAL time at the beginning of Placer: 13 secs 
+Total CPU  time at the beginning of Placer: 11 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:7a9b9436) REAL time: 8 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:b20c30f6) REAL time: 15 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:7a9b9436) REAL time: 8 secs 
+Phase 2.7  Design Feasibility Check (Checksum:b20c30f6) REAL time: 16 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:7a9b9436) REAL time: 8 secs 
+Phase 3.31  Local Placement Optimization (Checksum:b20c30f6) REAL time: 16 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
-Phase 4.2  Initial Placement for Architecture Specific Features (Checksum:3ce05a52) REAL time: 11 secs 
+Phase 4.2  Initial Placement for Architecture Specific Features (Checksum:b0b1bcc6) REAL time: 20 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:3ce05a52) REAL time: 11 secs 
+Phase 5.36  Local Placement Optimization (Checksum:b0b1bcc6) REAL time: 20 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:3ce05a52) REAL time: 11 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:b0b1bcc6) REAL time: 20 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:3ce05a52) REAL time: 12 secs 
+Phase 7.3  Local Placement Optimization (Checksum:b0b1bcc6) REAL time: 20 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:3ce05a52) REAL time: 12 secs 
+Phase 8.5  Local Placement Optimization (Checksum:b0b1bcc6) REAL time: 21 secs 
 
 Phase 9.8  Global Placement
-..................
-.........................................................................................
-............................................................................................................................................................................................................
-............................................................................................................................................................................................................
-...................................................
-Phase 9.8  Global Placement (Checksum:947a4aa1) REAL time: 32 secs 
+....................
+..................................................................................................................
+................................................................................................................................................................................................................................
+....................................................................................................................................................................................................................................
+.....................................................................................
+Phase 9.8  Global Placement (Checksum:e7ea37f2) REAL time: 1 mins 16 secs 
 
-Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:947a4aa1) REAL time: 32 secs 
+Phase 10.8  Global Placement
+..
+..................................................................................................................................................................................................................................
+...........................................................................................................................................................................................................
+..................................................................
+Phase 10.8  Global Placement (Checksum:4e143baa) REAL time: 2 mins 50 secs 
 
-Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:cea439c7) REAL time: 36 secs 
+Phase 11.9  Local Placement Optimization
+ERROR:Place:543 - This design does not fit into the number of slices available in this device due to the complexity of
+   the design and/or constraints.
 
-Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:cea439c7) REAL time: 36 secs 
+   Unplaced instances by type:
 
-Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:811f8d17) REAL time: 36 secs 
+     LUTM    196 (22.4%)
 
-Total REAL time to Placer completion: 36 secs 
-Total CPU  time to Placer completion: 36 secs 
-Running post-placement packing...
-Writing output files...
-WARNING:PhysDesignRules:367 - The signal <fix_gps_IBUF> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <pps_gps_IBUF> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <rx_GPS_IBUF> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <PS2_Data_IBUF> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <PS2_Clk_IBUF> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal
-   <my_Master/Xslaves[1].Yslaves[0].One_salve/HCU_Slave/Inst_returnstack/Mram_RAM1_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <my_Master/Xslaves[1].Yslaves[0].One_salve/HCU_Slave/Inst_returnstack/Mram_RAM2_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <my_Master/HCU_Master/Inst_returnstack/Mram_RAM1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <my_Master/HCU_Master/Inst_returnstack/Mram_RAM2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <my_Master/Xslaves[0].Yslaves[0].One_salve/HCU_Slave/Inst_returnstack/Mram_RAM2_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <my_Master/Xslaves[0].Yslaves[0].One_salve/HCU_Slave/Inst_returnstack/Mram_RAM1_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
+   Please evaluate the following:
 
-Design Summary
---------------
+   - If there are user-defined constraints or area groups:
+     Please look at the "User-defined constraints" section below to determine
+     what constraints might be impacting the fitting of this design.
+     Evaluate if they can be moved, removed or resized to allow for fitting.
+     Verify that they do not overlap or conflict with clock region restrictions.
+     See the clock region reports in the MAP log file (*map) for more details
+     on clock region usage.
 
-Design Summary:
-Number of errors:      0
-Number of warnings:   11
-Slice Logic Utilization:
-  Number of Slice Registers:                 1,083 out of  18,224    5%
-    Number used as Flip Flops:               1,081
-    Number used as Latches:                      0
-    Number used as Latch-thrus:                  0
-    Number used as AND/OR logics:                2
-  Number of Slice LUTs:                      4,197 out of   9,112   46%
-    Number used as logic:                    3,633 out of   9,112   39%
-      Number using O6 output only:           2,754
-      Number using O5 output only:             232
-      Number using O5 and O6:                  647
-      Number used as ROM:                        0
-    Number used as Memory:                     532 out of   2,176   24%
-      Number used as Dual Port RAM:            340
-        Number using O6 output only:           322
-        Number using O5 output only:             0
-        Number using O5 and O6:                 18
-      Number used as Single Port RAM:          192
-        Number using O6 output only:             0
-        Number using O5 output only:             0
-        Number using O5 and O6:                192
-      Number used as Shift Register:             0
-    Number used exclusively as route-thrus:     32
-      Number with same-slice register load:      4
-      Number with same-slice carry load:        28
-      Number with other load:                    0
+   - If there is difficulty in placing LUTs:
+     Try using the MAP LUT Combining Option (map lc area|auto|off).
 
-Slice Logic Distribution:
-  Number of occupied Slices:                 1,487 out of   2,278   65%
-  Number of LUT Flip Flop pairs used:        4,226
-    Number with an unused Flip Flop:         3,364 out of   4,226   79%
-    Number with an unused LUT:                  29 out of   4,226    1%
-    Number of fully used LUT-FF pairs:         833 out of   4,226   19%
-    Number of unique control sets:             229
-    Number of slice register sites lost
-      to control set restrictions:           1,129 out of  18,224    6%
+   - If there is difficulty in placing FFs:
+     Evaluate the number and configuration of the control sets in your design.
 
-  A LUT Flip Flop pair for this architecture represents one LUT paired with
-  one Flip Flop within a slice.  A control set is a unique combination of
-  clock, reset, set, and enable signals for a registered element.
-  The Slice Logic Distribution report is not meaningful if the design is
-  over-mapped for a non-slice resource or if Placement fails.
+   The following instances are the last set of instances that failed to place:
 
-IO Utilization:
-  Number of bonded IOBs:                        39 out of     232   16%
-    Number of LOCed IOBs:                       39 out of      39  100%
-    IOB Flip Flops:                             14
+   0. my_Master/Instbus<0> (size: 2)
+      LUTM my_Master/Inst_mem_Master/multi_bank[0].bank/Mram_RAM64bit/SP
+      LUTM my_Master/Inst_mem_Master/multi_bank[0].bank/Mram_RAM64bit/DP
+   1. my_Master/Instbus<2> (size: 2)
+      LUTM my_Master/Inst_mem_Master/multi_bank[2].bank/Mram_RAM64bit/SP
+      LUTM my_Master/Inst_mem_Master/multi_bank[2].bank/Mram_RAM64bit/DP
+   2. my_Master/Instbus<3> (size: 2)
+      LUTM my_Master/Inst_mem_Master/multi_bank[3].bank/Mram_RAM64bit/SP
+      LUTM my_Master/Inst_mem_Master/multi_bank[3].bank/Mram_RAM64bit/DP
+   3. my_Master/Instbus<1> (size: 2)
+      LUTM my_Master/Inst_mem_Master/multi_bank[1].bank/Mram_RAM64bit/SP
+      LUTM my_Master/Inst_mem_Master/multi_bank[1].bank/Mram_RAM64bit/DP
+   4. my_Master/Instbus<4> (size: 2)
+      LUTM my_Master/Inst_mem_Master/multi_bank[4].bank/Mram_RAM64bit/SP
+      LUTM my_Master/Inst_mem_Master/multi_bank[4].bank/Mram_RAM64bit/DP
+   5. my_Master/Instbus<5> (size: 2)
+      LUTM my_Master/Inst_mem_Master/multi_bank[5].bank/Mram_RAM64bit/SP
+      LUTM my_Master/Inst_mem_Master/multi_bank[5].bank/Mram_RAM64bit/DP
+   6. my_Master/Instbus<7> (size: 2)
+      LUTM my_Master/Inst_mem_Master/multi_bank[7].bank/Mram_RAM64bit/SP
+      LUTM my_Master/Inst_mem_Master/multi_bank[7].bank/Mram_RAM64bit/DP
+   7. my_Master/Instbus<8> (size: 2)
+      LUTM my_Master/Inst_mem_Master/multi_bank[8].bank/Mram_RAM64bit/SP
+      LUTM my_Master/Inst_mem_Master/multi_bank[8].bank/Mram_RAM64bit/DP
+   8. my_Master/Instbus<6> (size: 2)
+      LUTM my_Master/Inst_mem_Master/multi_bank[6].bank/Mram_RAM64bit/SP
+      LUTM my_Master/Inst_mem_Master/multi_bank[6].bank/Mram_RAM64bit/DP
+   9. my_Master/Instbus<9> (size: 2)
+      LUTM my_Master/Inst_mem_Master/multi_bank[9].bank/Mram_RAM64bit/SP
+      LUTM my_Master/Inst_mem_Master/multi_bank[9].bank/Mram_RAM64bit/DP
+   10. my_Master/Instbus<10> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[10].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[10].bank/Mram_RAM64bit/DP
+   11. my_Master/Instbus<12> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[12].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[12].bank/Mram_RAM64bit/DP
+   12. my_Master/Instbus<13> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[13].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[13].bank/Mram_RAM64bit/DP
+   13. my_Master/Instbus<11> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[11].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[11].bank/Mram_RAM64bit/DP
+   14. my_Master/Instbus<15> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[15].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[15].bank/Mram_RAM64bit/DP
+   15. my_Master/Instbus<16> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[16].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[16].bank/Mram_RAM64bit/DP
+   16. my_Master/Instbus<14> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[14].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[14].bank/Mram_RAM64bit/DP
+   17. my_Master/Instbus<18> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[18].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[18].bank/Mram_RAM64bit/DP
+   18. my_Master/Instbus<19> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[19].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[19].bank/Mram_RAM64bit/DP
+   19. my_Master/Instbus<17> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[17].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[17].bank/Mram_RAM64bit/DP
+   20. my_Master/Instbus<23> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[23].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[23].bank/Mram_RAM64bit/DP
+   21. my_Master/Instbus<24> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[24].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[24].bank/Mram_RAM64bit/DP
+   22. my_Master/Instbus<22> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[22].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[22].bank/Mram_RAM64bit/DP
+   23. my_Master/Instbus<25> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[25].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[25].bank/Mram_RAM64bit/DP
+   24. my_Master/Instbus<26> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[26].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[26].bank/Mram_RAM64bit/DP
+   25. my_Master/Instbus<28> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[28].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[28].bank/Mram_RAM64bit/DP
+   26. my_Master/Instbus<29> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[29].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[29].bank/Mram_RAM64bit/DP
+   27. my_Master/Instbus<27> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[27].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[27].bank/Mram_RAM64bit/DP
+   28. my_Master/Instbus<30> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[30].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[30].bank/Mram_RAM64bit/DP
+   29. my_Master/Instbus<31> (size: 2)
+       LUTM my_Master/Inst_mem_Master/multi_bank[31].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Inst_mem_Master/multi_bank[31].bank/Mram_RAM64bit/DP
+   30. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<1> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[1].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[1].bank/Mram_RAM64bit/DP
+   31. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<3> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[3].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[3].bank/Mram_RAM64bit/DP
+   32. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<2> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[2].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[2].bank/Mram_RAM64bit/DP
+   33. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<5> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[5].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[5].bank/Mram_RAM64bit/DP
+   34. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<6> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[6].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[6].bank/Mram_RAM64bit/DP
+   35. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<8> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[8].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[8].bank/Mram_RAM64bit/DP
+   36. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<9> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[9].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[9].bank/Mram_RAM64bit/DP
+   37. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<7> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[7].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[7].bank/Mram_RAM64bit/DP
+   38. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<10> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[10].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[10].bank/Mram_RAM64bit/DP
+   39. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<12> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[12].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[12].bank/Mram_RAM64bit/DP
+   40. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<13> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[13].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[13].bank/Mram_RAM64bit/DP
+   41. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<14> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[14].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[14].bank/Mram_RAM64bit/DP
+   42. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<15> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[15].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[15].bank/Mram_RAM64bit/DP
+   43. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<17> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[17].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[17].bank/Mram_RAM64bit/DP
+   44. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<16> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[16].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[16].bank/Mram_RAM64bit/DP
+   45. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<19> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[19].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[19].bank/Mram_RAM64bit/DP
+   46. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<20> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[20].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[20].bank/Mram_RAM64bit/DP
+   47. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<23> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[23].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[23].bank/Mram_RAM64bit/DP
+   48. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<28> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[28].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[28].bank/Mram_RAM64bit/DP
+   49. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<29> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[29].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[29].bank/Mram_RAM64bit/DP
+   50. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<31> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[31].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[31].bank/Mram_RAM64bit/DP
+   51. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<32> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[32].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[32].bank/Mram_RAM64bit/DP
+   52. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<33> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[33].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[33].bank/Mram_RAM64bit/DP
+   53. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<34> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[34].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[34].bank/Mram_RAM64bit/DP
+   54. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<40> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[40].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[40].bank/Mram_RAM64bit/DP
+   55. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<41> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[41].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[41].bank/Mram_RAM64bit/DP
+   56. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<45> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[45].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[45].bank/Mram_RAM64bit/DP
+   57. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<43> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[43].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[43].bank/Mram_RAM64bit/DP
+   58. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<46> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[46].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[46].bank/Mram_RAM64bit/DP
+   59. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<47> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[47].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[47].bank/Mram_RAM64bit/DP
+   60. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<48> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[48].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[48].bank/Mram_RAM64bit/DP
+   61. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<49> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[49].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[49].bank/Mram_RAM64bit/DP
+   62. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<50> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[50].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[50].bank/Mram_RAM64bit/DP
+   63. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<51> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[51].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[51].bank/Mram_RAM64bit/DP
+   64. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<54> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[54].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[54].bank/Mram_RAM64bit/DP
+   65. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<63> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[63].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[63].bank/Mram_RAM64bit/DP
+   66. my_Master/Xslaves[1].Yslaves[0].One_salve/Instbus<61> (size: 2)
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[61].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[1].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[61].bank/Mram_RAM64bit/DP
+   67. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<0> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[0].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[0].bank/Mram_RAM64bit/DP
+   68. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<1> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[1].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[1].bank/Mram_RAM64bit/DP
+   69. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<3> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[3].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[3].bank/Mram_RAM64bit/DP
+   70. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<4> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[4].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[4].bank/Mram_RAM64bit/DP
+   71. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<2> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[2].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[2].bank/Mram_RAM64bit/DP
+   72. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<5> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[5].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[5].bank/Mram_RAM64bit/DP
+   73. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<6> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[6].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[6].bank/Mram_RAM64bit/DP
+   74. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<9> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[9].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[9].bank/Mram_RAM64bit/DP
+   75. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<11> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[11].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[11].bank/Mram_RAM64bit/DP
+   76. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<15> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[15].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[15].bank/Mram_RAM64bit/DP
+   77. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<17> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[17].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[17].bank/Mram_RAM64bit/DP
+   78. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<16> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[16].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[16].bank/Mram_RAM64bit/DP
+   79. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<20> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[20].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[20].bank/Mram_RAM64bit/DP
+   80. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<21> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[21].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[21].bank/Mram_RAM64bit/DP
+   81. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<22> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[22].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[22].bank/Mram_RAM64bit/DP
+   82. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<23> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[23].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[23].bank/Mram_RAM64bit/DP
+   83. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<24> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[24].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[24].bank/Mram_RAM64bit/DP
+   84. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<26> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[26].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[26].bank/Mram_RAM64bit/DP
+   85. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<27> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[27].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[27].bank/Mram_RAM64bit/DP
+   86. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<25> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[25].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[25].bank/Mram_RAM64bit/DP
+   87. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<29> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[29].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[29].bank/Mram_RAM64bit/DP
+   88. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<30> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[30].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[30].bank/Mram_RAM64bit/DP
+   89. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<31> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[31].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[31].bank/Mram_RAM64bit/DP
+   90. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<39> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[39].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[39].bank/Mram_RAM64bit/DP
+   91. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<44> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[44].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[44].bank/Mram_RAM64bit/DP
+   92. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<48> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[48].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[48].bank/Mram_RAM64bit/DP
+   93. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<50> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[50].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[50].bank/Mram_RAM64bit/DP
+   94. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<56> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[56].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[56].bank/Mram_RAM64bit/DP
+   95. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<58> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[58].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[58].bank/Mram_RAM64bit/DP
+   96. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<63> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[63].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[63].bank/Mram_RAM64bit/DP
+   97. my_Master/Xslaves[0].Yslaves[0].One_salve/Instbus<61> (size: 2)
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[61].bank/Mram_RAM64bit/SP
+       LUTM my_Master/Xslaves[0].Yslaves[0].One_salve/Inst_mem_Slave/multi_bank[61].bank/Mram_RAM64bit/DP
+ERROR:Place:120 - There were not enough sites to place all selected components.
+   Some of these failures can be circumvented by using an alternate algorithm (though it may take longer run time). If
+   you would like to enable this algorithm please set the environment variable XIL_PAR_ENABLE_LEGALIZER to 1 and try
+   again 
 
-Specific Feature Utilization:
-  Number of RAMB16BWERs:                         0 out of      32    0%
-  Number of RAMB8BWERs:                         32 out of      64   50%
-  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
-    Number used as BUFIO2s:                      1
-    Number used as BUFIO2_2CLKs:                 0
-  Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
-    Number used as BUFIO2FBs:                    1
-    Number used as BUFIO2FB_2CLKs:               0
-  Number of BUFG/BUFGMUXs:                       2 out of      16   12%
-    Number used as BUFGs:                        2
-    Number used as BUFGMUX:                      0
-  Number of DCM/DCM_CLKGENs:                     1 out of       4   25%
-    Number used as DCMs:                         1
-    Number used as DCM_CLKGENs:                  0
-  Number of ILOGIC2/ISERDES2s:                  14 out of     248    5%
-    Number used as ILOGIC2s:                    14
-    Number used as ISERDES2s:                    0
-  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
-  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
-  Number of BSCANs:                              0 out of       4    0%
-  Number of BUFHs:                               0 out of     128    0%
-  Number of BUFPLLs:                             0 out of       8    0%
-  Number of BUFPLL_MCBs:                         0 out of       4    0%
-  Number of DSP48A1s:                            0 out of      32    0%
-  Number of ICAPs:                               0 out of       1    0%
-  Number of MCBs:                                0 out of       2    0%
-  Number of PCILOGICSEs:                         0 out of       2    0%
-  Number of PLL_ADVs:                            0 out of       2    0%
-  Number of PMVs:                                0 out of       1    0%
-  Number of STARTUPs:                            0 out of       1    0%
-  Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.65
+Phase 11.9  Local Placement Optimization (Checksum:4e143baa) REAL time: 2 mins 51 secs 
 
-Peak Memory Usage:  557 MB
-Total REAL time to MAP completion:  39 secs 
-Total CPU time to MAP completion:   38 secs 
+Total REAL time to Placer completion: 2 mins 51 secs 
+Total CPU  time to Placer completion: 2 mins 48 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
 
 Mapping completed.
 See MAP report file "Nexys3v6_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   3
+Number of warnings :   0

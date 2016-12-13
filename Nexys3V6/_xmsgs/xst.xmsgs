@@ -38,16 +38,25 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/select_in0_save.vhd" Line 519: Assignment to <arg fmt="%s" index="1">ptr</arg> ignored, since the identifier is never used
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="758" delta="new" >"/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/ipcore_dir/multiply.vhd" Line 62: Replacing existing netlist <arg fmt="%s" index="1">multiply</arg>(<arg fmt="%s" index="2"></arg>)
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/IPwaitBT1.vhd" Line 132: <arg fmt="%s" index="1">btnout</arg> should be on the sensitivity list of the process
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/IPwaitBT1.vhd" Line 141: <arg fmt="%s" index="1">current_state</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/Hmaster.vhd" Line 74: Net &lt;<arg fmt="%s" index="1">BusLdld</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/IP_fibo.vhd" Line 112: <arg fmt="%s" index="1">tin</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/Hmaster.vhd" Line 75: Net &lt;<arg fmt="%s" index="1">IPdwt</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/IPWait.vhd" Line 77: <arg fmt="%s" index="1">tin</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/random.vhd" Line 50: <arg fmt="%s" index="1">enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/random.vhd" Line 55: <arg fmt="%s" index="1">r</arg> should be on the sensitivity list of the process
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/afficheur.vhf" Line 272: Net &lt;<arg fmt="%s" index="1">XLXI_2_CLR_openSignal</arg>&gt; does not have a driver.
@@ -110,15 +119,6 @@
 <msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/Hmaster.vhd</arg>&quot; line <arg fmt="%d" index="2">600</arg>: Output port &lt;<arg fmt="%s" index="3">oversized</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Stack_Master</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">BusLdld</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">IPdwt</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">HMaster</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0</arg>).
-</msg>
-
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">IPdft</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">HMaster</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0</arg>).
-</msg>
-
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Tin&lt;31:16&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
@@ -141,6 +141,21 @@
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">count&lt;7:6&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Tin&lt;31:16&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Nin&lt;31:16&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Tin&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="info" file="Xst" num="3010" delta="old" >&quot;<arg fmt="%s" index="1">/home/m1/peyroux/Documents/M1S1/AEO/Nexys3V6/afficheur.vhf</arg>&quot; line <arg fmt="%d" index="2">311</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
@@ -198,6 +213,9 @@
 </msg>
 
 <msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">release</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
 <msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_94</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Stack_slave</arg>&gt;.
@@ -953,30 +971,6 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wr_adr_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HCU_Slave</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;write_adr_27&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BufLed_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BufLed_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BufLed_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BufLed_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BufLed_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BufLed_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BufLed_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BufLed_reg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inslocal_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">HCU_Master</arg>&gt;.
 </msg>
 
@@ -1087,25 +1081,25 @@ It will be removed from the design.
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[63].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[62].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
-
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[61].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[59].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[62].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[60].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[58].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[56].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[59].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[57].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[55].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[53].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[56].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[54].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[53].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[52].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
@@ -1113,25 +1107,25 @@ It will be removed from the design.
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[50].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[49].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
-
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[48].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[46].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[49].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[47].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
+<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[46].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[45].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[44].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[43].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[44].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[41].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[42].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[40].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
-
-<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[41].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[39].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
@@ -1141,11 +1135,14 @@ It will be removed from the design.
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[36].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
+<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[34].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[35].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[33].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3040" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[34].bank/Mram_RAM64bit</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[31].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+</msg>
 
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[32].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
@@ -1153,16 +1150,13 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[30].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
-<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[31].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[28].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[29].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[27].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
-</msg>
-
-<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[28].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[26].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
@@ -1177,22 +1171,22 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[23].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
+<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[21].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+</msg>
+
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[22].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[20].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
-<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[21].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
-</msg>
-
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[19].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
-<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[17].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[18].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
-<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[18].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[17].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[16].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
@@ -1246,10 +1240,13 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Master/multi_bank[0].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
+<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[63].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+</msg>
+
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[62].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
-<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[63].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[60].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[61].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
@@ -1258,7 +1255,7 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[59].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
-<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[60].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[57].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[58].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
@@ -1267,7 +1264,7 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[56].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
-<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[57].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[54].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[55].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
@@ -1276,7 +1273,7 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[53].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
-<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[54].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[51].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[52].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
@@ -1285,13 +1282,10 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[50].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
-<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[51].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[48].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[49].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
-</msg>
-
-<msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[48].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
 <msg type="info" file="Xst" num="3043" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Inst_mem_Slave/multi_bank[47].bank/Mram_RAM64bit</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
@@ -1439,6 +1433,9 @@ It will be removed from the design.
 </msg>
 
 <msg type="info" file="Xst" num="3031" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3031" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_RAM</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
 <msg type="info" file="Xst" num="3031" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_RAM</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -1833,37 +1830,13 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">HCU_Slave/inslocal_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">HSlave</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg0_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ack6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">arbitre</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">q_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg0_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ack4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">arbitre</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">q_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg0_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">q_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg0_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">q_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg0_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">q_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg0_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">q_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg0_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">q_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg0_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ack5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">arbitre</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ack4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">arbitre</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ack7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">arbitre</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ack5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">arbitre</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_19&gt; </arg>
@@ -1914,16 +1887,13 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_41</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_41&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_37</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_37&gt; </arg>
-</msg>
-
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_adr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_adr_0&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_42</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_42&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_38</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_38&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_37</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_37&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_adr_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_adr_1&gt; </arg>
@@ -1932,10 +1902,10 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_43</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_43&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/stpush</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/stackpush&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_38</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_38&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_39</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_39&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/stpush</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/stackpush&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_adr_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_adr_2&gt; </arg>
@@ -1944,22 +1914,25 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_44</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_44&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_45</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_45&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_39</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_39&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_adr_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_adr_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_46</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_46&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_45</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_45&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_adr_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_adr_4&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_47</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_47&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_46</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_46&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_adr_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_adr_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_47</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_47&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Master/wr_data_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HMaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Master/write_data_0&gt; </arg>
@@ -2205,6 +2178,9 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">HCU_Slave/wr_data_34</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">HSlave</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;HCU_Slave/write_data_34&gt; </arg>
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IPdone</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">IP_fibo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;reset_clk_DFF_247&gt; </arg>
+</msg>
+
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">HCU_Slave/kernel_state</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">HSlave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
@@ -2219,21 +2195,25 @@ It will be removed from the design.
 
 <msg type="warning" file="Xst" num="2040" delta="old" >Unit <arg fmt="%s" index="1">HMaster</arg>: <arg fmt="%d" index="2">96</arg> multi-source signals are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
+<msg type="warning" file="Xst" num="2040" delta="old" >Unit <arg fmt="%s" index="1">HSlave</arg>: <arg fmt="%d" index="2">96</arg> multi-source signals are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+
 <msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">IP_waitbt</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
-<msg type="warning" file="Xst" num="2040" delta="old" >Unit <arg fmt="%s" index="1">HSlave</arg>: <arg fmt="%d" index="2">96</arg> multi-source signals are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+<msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">IP_fibo</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
 <msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">IP_Tic</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
+<msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">IP_Rdm</arg>: <arg fmt="%d" index="2">64</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+
 <msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">IP_switch</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
-<msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">IP_mul16</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+<msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">IP_mul16_1</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
 <msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">IP_MEcom</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
-<msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">IP_get</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
-
 <msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">IP_Snum</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+
+<msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">IP_get</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">my_Master/HCU_Master/spmdcode_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Nexys3v6</arg>&gt;.
 </msg>
